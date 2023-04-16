@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@100;400;700;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');:root {
+  --color-white: #ffffff;
+  --color-black: #222222;
+  --fs-xsmall: .7rem;
+  --fs-small: 1rem;
+  --fs-medium: 1.2rem;
+  --fs-big: 1.6rem;
+  --fs-large: 2.2rem;
+  --fs-xlarge: 3rem;
+  --fs-xxlarge: 7rem;
+  color: var(--color-grey-dark);
+  @media (max-width: 650px) {
+    --fs-xxlarge: 6rem;
+    --fs-xlarge: 2.5rem;
+    --fs-large: 2rem;
+    --fs-big: 1.3rem;
+  }
+  @media (max-width: 620px) {
+    --fs-xxlarge: 5.5rem;
+    --fs-xlarge: 2.2rem;
+    --fs-large: 2rem;
+    --fs-big: 1.1rem;
+  }
+  @media (max-width: 525px) {
+    --fs-xxlarge: 4.5rem;
+    --fs-large: 1.7rem;
+  }
+  @media (max-width: 435px) {
+    --fs-xxlarge: 3.5rem;
+    --fs-large: 1.4rem;
+  }
+  @media (max-width: 360px) {
+    --fs-xxlarge: 2.5rem;
+
+  }
+}
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 400vh;
+  font-size: 100%;
+  font-family: "Lato", sans-serif;
+  background: linear-gradient(
+    0deg,
+    #042326 0%,
+    #083233 25%,
+    #031b1d 50%,
+    #082d2e 75%,
+    #031b1d 100%
+  );
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
+a,
+li {
+
+  list-style: none;
+  text-decoration: none;
+  color: var(--color-black);
+}
