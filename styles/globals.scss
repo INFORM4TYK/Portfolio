@@ -10,30 +10,7 @@
   --fs-xlarge: 3rem;
   --fs-xxlarge: 7rem;
   color: var(--color-grey-dark);
-  @media (max-width: 650px) {
-    --fs-xxlarge: 6rem;
-    --fs-xlarge: 2.5rem;
-    --fs-large: 2rem;
-    --fs-big: 1.3rem;
-  }
-  @media (max-width: 620px) {
-    --fs-xxlarge: 5.5rem;
-    --fs-xlarge: 2.2rem;
-    --fs-large: 2rem;
-    --fs-big: 1.1rem;
-  }
-  @media (max-width: 525px) {
-    --fs-xxlarge: 4.5rem;
-    --fs-large: 1.7rem;
-  }
-  @media (max-width: 435px) {
-    --fs-xxlarge: 3.5rem;
-    --fs-large: 1.4rem;
-  }
-  @media (max-width: 360px) {
-    --fs-xxlarge: 2.5rem;
-
-  }
+ 
 }
 body,
 html {

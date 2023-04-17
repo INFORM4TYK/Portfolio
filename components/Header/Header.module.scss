@@ -79,9 +79,35 @@
   p.topSec {
     top: -1.2rem;
   }
-  @media (max-width: 620px) {
-    p {
-      font-size: var(--fs-small);
+}
+@media (max-width: 720px) {
+  .mainText{
+    span {
+      font-size: 5rem;
+    }
+  }
+}
+@media (max-width: 520px) {
+  .mainText{
+    span {
+      font-size: 4rem;
+    }
+  }
+  .secondText{
+    span{
+      font-size: 1.5rem;
+    }
+  }
+}
+@media (max-width: 435px) {
+  .mainText{
+    span {
+      font-size: 2.5rem;
+    }
+  }
+  .secondText{
+    span{
+      font-size: 1rem;
     }
   }
 }
@@ -90,13 +116,15 @@
     both;
   font-size: var(--fs-large);
   color: #1d7373;
-  padding: 0.7rem;
   background: linear-gradient(to right, #0a3a40 4px, transparent 4px) 0 0,
     linear-gradient(to left, #0a3a40 4px, transparent 4px) 100% 100%,
     linear-gradient(to bottom, #0a3a40 4px, transparent 4px) 0 0,
     linear-gradient(to top, #0a3a40 4px, transparent 4px) 100% 100%;
   background-repeat: no-repeat;
   background-size: 20px 20px;
+  display: flex;
+  align-items: center;
+  padding: .7rem;
   span {
     display: inline-block;
   }
