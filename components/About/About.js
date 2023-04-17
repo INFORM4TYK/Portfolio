@@ -1,8 +1,8 @@
 import styles from "./About.module.scss";
-import WhatsApp from "../../images/whats.svg";
-import Instagram from "../../images/insta.svg";
-import Messenger from "../../images/Messenger.svg";
-import Git from "../../images/git.svg";
+import WhatsApp from "../../public/whats.svg";
+import Instagram from "../../public/insta.svg";
+import Messenger from "../../public/Messenger.svg";
+import Git from "../../public/git.svg";
 import Image from "next/image";
 import Link from "next/link";
 
