@@ -73,12 +73,14 @@
     position: absolute;
     font-family: "Gloria Hallelujah", cursive;
   }
-  p.bottomSec {
-    bottom: -1.2rem;
-  }
-  p.topSec {
-    top: -1.2rem;
-  }
+    p.bottomSec {
+      bottom: -1.2rem;
+    }
+    p.topSec {
+      top: -1rem;
+      transform: translateX(-20px);
+    }
+
 }
 @media (max-width: 720px) {
   .mainText{
