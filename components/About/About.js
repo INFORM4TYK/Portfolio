@@ -67,8 +67,8 @@ function About() {
             </p>
           </div>
         </section>
-        <section className={styles.navSec2}>
-          <div>
+        <section className={styles.rightSec}>
+          <div className={styles.skllsLeftSec}>
             {skills.map((char, index) => {
               if (char === " ") {
                 return <span key={index}>&nbsp;</span>;
@@ -81,7 +81,29 @@ function About() {
               }
             })}
           </div>
-          <div>
+          <div className={styles.skills}>
+            <ul>
+              <label>
+                <li>Komunikacja</li>
+              </label>
+              <label>
+                <li>Kreatywność</li>
+              </label>
+              <label>
+                <li>Organizacja</li>
+              </label>
+              <label>
+                <li>Liderowanie</li>
+              </label>
+              <label>
+                <li>Adaptyjność</li>
+              </label>
+              <label>
+                <li>Empatia</li>
+              </label>
+            </ul>
+          </div>
+          <div className={styles.skllsLeftSec}>
             {tech.map((char, index) => {
               if (char === " ") {
                 return <span key={index}>&nbsp;</span>;
@@ -94,30 +116,6 @@ function About() {
               }
             })}
           </div>
-        </section>
-        <section className={styles.rightSec}>
-          <div className={styles.skills}>
-            <ul>
-              <label>
-                <li>Komunikacja</li>
-              </label>
-              <label>
-                <li>Kreatywność</li>
-              </label>
-              <label>
-                <li>Organizacja</li>
-              </label>
-              <label>
-                <li>Liderowanie</li>
-              </label>
-              <label>
-                <li>Adaptyjność</li>
-              </label>
-              <label>
-                <li>Empatia</li>
-              </label>
-            </ul>
-          </div>
           <div className={styles.skills}>
             <ul>
               <label>
@@ -141,7 +139,8 @@ function About() {
             </ul>
           </div>
         </section>
-      </section>
+        </section>
+       
     </main>
   );
 }

@@ -3,7 +3,7 @@
   --color-white: #ffffff;
   --color-black: #222222;
   --fs-xsmall: .7rem;
-  --fs-small: 1rem;
+  --fs-small: .9rem;
   --fs-medium: 1.2rem;
   --fs-big: 1.6rem;
   --fs-large: 2.2rem;
@@ -20,14 +20,15 @@ html {
   height: 400vh;
   font-size: 100%;
   font-family: "Lato", sans-serif;
-  background: linear-gradient(
-    0deg,
-    #042326 0%,
-    #083233 25%,
-    #031b1d 50%,
-    #082d2e 75%,
-    #031b1d 100%
-  );
+  background-color: #2A303C;
+  // background: linear-gradient(
+  //   0deg,
+  //   #042326 0%,
+  //   #083233 25%,
+  //   #031b1d 50%,
+  //   #082d2e 75%,
+  //   #031b1d 100%
+  // );
 }
 *,
 *::after,

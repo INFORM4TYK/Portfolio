@@ -1,12 +1,11 @@
-.navSec,
-.navSec2 {
+.navSec {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
   font-size: var(--fs-xlarge);
   color: var(--color-white);
-  background-color: #0a3a40;
+  background-color: #1fb2a5;
   padding: 1rem 0;
   a {
     width: var(--fs-xlarge);
@@ -23,38 +22,63 @@
     align-items: center;
   }
 }
-.navSec2,
+.leftSec {
+  margin: 1rem 1rem 3rem 1rem;
+  padding: 1rem;
+  color: white;
+  font-size: var(--fs-big);
+}
 .rightSec {
   display: grid;
   grid-template-columns: 1fr 1fr;
   place-items: center;
-}
-.leftSec,
-.rightSec {
-  font-size: 100%;
-  min-height: max(10vh, 200px);
-  div{
-    margin: 2rem  1rem;
-    background-color: #0F5959;
-    padding: .4rem;
-    min-width: max(80% , 100px);
-    border-radius: 10px;
-  }
-  p,
-  li {
+  gap: 4rem 0;
+  margin-bottom: 2rem;
+
+  div > ul,
+  * {
     color: white;
+  }
+  ul {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 0 1rem;
     font-size: var(--fs-big);
   }
+  div:nth-child(1),
+  div:nth-child(3) {
+    background-color: #1fb2a5;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+    font-size: var(--fs-xlarge);
+    clip-path: polygon(0 0, 92% 0, 100% 50%, 92% 100%, 0 100%);
+  }
+  li:before {
+    content: "-";
+  }
 }
+
 @media (max-width: 1024px) {
   .navSec {
     span {
       font-size: 2rem;
     }
   }
-  .navSec2 {
-    span {
-      font-size: 2rem;
+  .rightSec {
+    div:nth-child(2),
+    div:nth-child(4) {
+        text-align: center;
+        width: 100%;
+      
+    }
+    grid-template-columns: auto;
+    div:nth-child(1),
+    div:nth-child(3) {
+      clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 100%, 0 100%);
     }
   }
 }
@@ -64,16 +88,11 @@
       font-size: 1.7rem;
     }
     a {
-      margin: 1rem .3rem;
+      margin: 1rem 0.3rem;
     }
   }
-  .navSec2,
-  .rightSec,
   .leftSec {
-    span,
-    li {
-      font-size: 1.3rem;
-    }
+    font-size: var(--fs-medium);
   }
 }
 @media (max-width: 426px) {
@@ -85,15 +104,7 @@
       margin: 1rem 0.3rem;
     }
   }
-  .navSec2,
-  .rightSec,
   .leftSec {
-    margin: 1rem 0.2rem;
-    span {
-      font-size: 0.8rem;
-    }
-    li{
-      font-size: 0.9rem;
-    }
+    font-size: var(--fs-small);
   }
 }
