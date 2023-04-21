@@ -1,34 +1,39 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@100;400;700;900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');:root {
+@import url("https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap");
+:root {
   --color-white: #ffffff;
   --color-black: #222222;
-  --fs-xsmall: .7rem;
-  --fs-small: .9rem;
+  --main-color: #2a303c;
+  --sec-color: #1fb2a5;
+  --dark-green: #107361;
+  --fs-xsmall: 0.7rem;
+  --fs-small: 0.9rem;
   --fs-medium: 1.2rem;
   --fs-big: 1.6rem;
   --fs-large: 2.2rem;
   --fs-xlarge: 3rem;
   --fs-xxlarge: 7rem;
+  --ff-main: "Lato", sans-serif;
   color: var(--color-grey-dark);
- 
 }
 body,
 html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  height: 400vh;
   font-size: 100%;
-  font-family: "Lato", sans-serif;
-  background-color: #2A303C;
-  // background: linear-gradient(
-  //   0deg,
-  //   #042326 0%,
-  //   #083233 25%,
-  //   #031b1d 50%,
-  //   #082d2e 75%,
-  //   #031b1d 100%
-  // );
+  font-family: var(--ff-main);
+  background-color: var(--main-color);
+  background-image: linear-gradient(
+    180deg,
+    rgba(42, 48, 60, 1) 0%,
+    rgba(40, 44, 49, 1) 20%,
+    rgba(31, 34, 41, 1) 40%,
+    rgba(28, 30, 35, 1) 60%,
+    rgba(27, 28, 35, 1) 80%,
+    rgba(15, 16, 18, 1) 100%
+  );
+
 }
 *,
 *::after,
@@ -38,8 +43,10 @@ html {
 }
 a,
 li {
-
   list-style: none;
   text-decoration: none;
   color: var(--color-black);
+}
+#_next{
+  height: 400vh;
 }

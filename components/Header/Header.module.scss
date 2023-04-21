@@ -62,13 +62,13 @@
 .mainText {
   animation: tracking-in-expand 2s cubic-bezier(0.215, 0.61, 0.355, 1) both;
   font-size: var(--fs-xxlarge);
-  color: #107361;
+  color: var(--dark-green);
   font-weight: 400;
   text-shadow: #0a3a40 0.2px 0 5px;
   display: flex;
   flex-wrap: nowrap;
   p {
-    color: #107361;
+    color: var(--dark-green);
     font-size: var(--fs-medium);
     position: absolute;
     font-family: "Gloria Hallelujah", cursive;

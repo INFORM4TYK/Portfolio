@@ -5,7 +5,7 @@
   flex-wrap: nowrap;
   font-size: var(--fs-xlarge);
   color: var(--color-white);
-  background-color: #1fb2a5;
+  background-color: var(--sec-color);
   padding: 1rem 0;
   a {
     width: var(--fs-xlarge);
@@ -25,7 +25,7 @@
 .leftSec {
   margin: 1rem 1rem 3rem 1rem;
   padding: 1rem;
-  color: white;
+  color: var(--color-white);
   font-size: var(--fs-big);
 }
 .rightSec {
@@ -37,17 +37,17 @@
 
   div > ul,
   * {
-    color: white;
+    color: var(--color-white);
   }
   ul {
     display: grid;
     grid-template-columns: auto auto;
-    gap: 0 1rem;
+    gap: 0 4rem;
     font-size: var(--fs-big);
   }
   div:nth-child(1),
   div:nth-child(3) {
-    background-color: #1fb2a5;
+    background-color: var(--sec-color);
     width: 100%;
     height: 100%;
     display: flex;
@@ -96,7 +96,14 @@
   }
 }
 @media (max-width: 426px) {
-  .navSec {
+  .navSec,.rightSec {
+    div:nth-child(2),
+    div:nth-child(4) {
+        font-size: var(--fs-small);
+    }
+    div > ul{
+      font-size: var(--fs-small);
+    }
     span {
       font-size: 1rem;
     }
@@ -107,4 +114,5 @@
   .leftSec {
     font-size: var(--fs-small);
   }
+
 }
