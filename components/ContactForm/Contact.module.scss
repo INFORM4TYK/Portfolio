@@ -26,6 +26,10 @@
       flex-direction: column;
       width: 100%;
     }
+    span{
+      visibility: hidden;
+      
+    }
     input,textarea{
         padding: .4rem ;
         width: 100%;

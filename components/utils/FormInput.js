@@ -1,34 +1,33 @@
-import { useState } from "react";
+
 export const FormElement = (props) => {
-  const { label, errormessage,id,as, ...inputProps } = props;
-  const [focused, setFocused] = useState(false);
-  const handleFocus = () => {
-    setFocused(true);
-  }
+  const { label, errormessage, id, as, error, ...inputProps } = props;
+  const handleFocused = () => {
+      
+  };
+
   return (
     <div>
-    <label>
-      {label}
-      {as === "textarea" ? (
-        <textarea
-          key={id}
-          {...inputProps}
-          focused={focused.toString()}
-          onBlur={handleFocus}
-          errormessage={errormessage}
-        />
-      ) : (
-        <input
-          key={id}
-          {...inputProps}
-          focused={focused.toString()}
-          onBlur={handleFocus}
-          errormessage={errormessage}
-        />
-      )}
-    <span>{errormessage}</span>
-    </label>
+      <label>
+        {label}
+        {as === "textarea" ? (
+          <textarea
+            key={id}
+            {...inputProps}
+            focused={error.toString()}
+            onBlur={handleFocused}
+            errormessage={errormessage}
+          />
+        ) : (
+          <input
+            key={id}
+            {...inputProps}
+            focused={error.toString()}
+            onBlur={handleFocused}
+            errormessage={errormessage}
+          />
+        )}
+        <span>{errormessage}</span>
+      </label>
     </div>
-   
   );
 };
