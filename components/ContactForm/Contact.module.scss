@@ -4,58 +4,84 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   place-items: center;
+  label > span,
+  p {
+    margin-bottom: 0.3rem;
+  }
+}
+@media (max-width: 840px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+  }
 }
 .secForm,
 .secContact {
   padding: 2rem;
 }
-// .secForm {
-//   background-color: aqua;
-// }
-// .secContact {
-//   background-color: antiquewhite;
-// }
+.secForm {
+  background-color: aqua;
+  margin: 1rem;
+}
+.secContact {
+  background-color: antiquewhite;
+}
 .form {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem 2rem;
+  width: 100%;
+  & > *,
+  div > * {
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    & > *,
-    div > * {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-    }
-    span{
-      visibility: hidden;
-      
-    }
-    input,textarea{
-        padding: .4rem ;
-        width: 100%;
-        max-width: 250px;
-        border: none;
-        border-radius: 2px;
-        box-shadow: 3px 3px 31px -13px rgba(66, 68, 90, 1);
-    }
-    span {
-      visibility: hidden;
-    }
-    input:invalid[focused="true"] ~ span,
-    textarea:invalid[focused="true"] ~ span  {
-      visibility: visible;
-    }
-    input:invalid[focused="true"],
-    textarea:invalid[focused="true"] {
-      border: 1px solid red;
-    }
-    div:nth-child(5) {
-        grid-column: 1 / span 2;
-      textarea {
-        height: 10rem;
-        resize: none;
-        font-family: var(--ff-main);
-        max-width: calc(100% - .4rem);
-      }
+  }
+  span {
+    visibility: hidden;
+  }
+  input,
+  textarea {
+    padding: 0.4rem;
+    width: 100%;
+    max-width: 250px;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 3px 3px 31px -13px rgba(66, 68, 90, 1);
+  }
+  span {
+    visibility: hidden;
+    color: red;
+  }
+  input:invalid[focused="true"] ~ span,
+  textarea:invalid[focused="true"] ~ span {
+    visibility: visible;
+  }
+  input:invalid[focused="true"],
+  textarea:invalid[focused="true"] {
+    border: 1px solid red;
+  }
+  div:nth-child(5) {
+    grid-column: 1 / span 2;
+    textarea {
+      height: 10rem;
+      resize: none;
+      font-family: var(--ff-main);
+      max-width: 100%;
     }
   }
+}
+
+@media (max-width: 430px) {
+  .form {
+    display: block;
+    
+  }
+  .secForm{
+    max-width: calc(100% - 5rem);
+    textarea,input{
+      max-width: auto;
+    }
+  }
+}

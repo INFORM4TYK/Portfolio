@@ -8,7 +8,7 @@ export const FormElement = (props) => {
   return (
     <div>
       <label>
-        {label}
+        <p>{label}</p>
         {as === "textarea" ? (
           <textarea
             key={id}

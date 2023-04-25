@@ -154,14 +154,7 @@ const Contact = () => {
         </form>
       </section>
       <section className={styles.secContact}>
-        <div>
-          <p>asdjfghaklsdjghlsdkfjghlksdfjghs</p>
-          <p>djfghbasdljhgalsdfjkghlasdfgj</p>
-        </div>
-        <div>
-          <p>asdjfghaklsdjghlsdkfjghlksdfjghs</p>
-          <p>djfghbasdljhgalsdfjkghlasdfgj</p>
-        </div>
+       <div>elo</div>
       </section>
     </div>
   );
