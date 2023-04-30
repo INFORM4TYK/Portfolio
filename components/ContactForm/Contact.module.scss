@@ -20,16 +20,83 @@
   padding: 2rem;
 }
 .secForm {
-  margin: 2rem .8rem;
+  margin: 2rem 0.8rem;
   color: var(--text-light);
   background-color: #141414;
   border-radius: 20px;
-    button{
-      grid-column: 1 / span 2;
-      width: 100%;
-      max-width: calc(100% - 3rem);
-      place-items: center;
+  div:nth-child(6) {
+    grid-column: 1 / span 2;
+    width: 100%;
+    place-items: center;
+    p {
+      color: var(--font-red);
     }
+    button,
+    p {
+      justify-content: center;
+      align-items: center;
+    }
+    button {
+      appearance: button;
+      background-color: #1899D6;
+      border: solid transparent;
+      border-radius: 16px;
+      border-width: 0 0 4px;
+      box-sizing: border-box;
+      color: #FFFFFF;
+      display: inline-block;
+      font-size: 15px;
+      font-weight: 700;
+      margin: 0;
+      outline: none;
+      overflow: visible;
+      padding: 13px 19px;
+      text-align: center;
+      text-transform: uppercase;
+      touch-action: manipulation;
+      transform: translateZ(0);
+      transition: filter .2s;
+      user-select: none;
+      -webkit-user-select: none;
+      vertical-align: middle;
+      white-space: nowrap;
+     }
+     
+     button:after {
+      background-clip: padding-box;
+      background-color: #1CB0F6;
+      border: solid transparent;
+      border-radius: 16px;
+      border-width: 0 0 4px;
+      bottom: -4px;
+      content: "";
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: -1;
+     }
+     
+     button:main, button:focus {
+      user-select: auto;
+     }
+     
+     button:hover:not(:disabled) {
+      filter: brightness(1.1);
+     }
+     
+     button:disabled {
+      cursor: auto;
+     }
+     
+     button:active:after {
+      border-width: 0 0 0px;
+     }
+     
+     button:active {
+      padding-bottom: 10px;
+     }
+  }
 }
 .secContact {
   background-color: antiquewhite;
@@ -71,7 +138,7 @@
   }
   div:nth-child(5) {
     grid-column: 1 / span 2;
-    textarea{
+    textarea {
       height: 10rem;
       resize: none;
       font-family: var(--ff-main);

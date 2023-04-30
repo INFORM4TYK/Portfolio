@@ -142,16 +142,18 @@ const Contact = () => {
               />
             );
           })}
+          <div>
           <button type="submit" disabled={disable()} onClick={onClick}>
-            Send
+            SEND
           </button>
           {serverState.status && (
-            <>
+          
               <p className={!serverState.status.ok ? "errorMsg" : ""}>
                 {serverState.status.msg}
               </p>
-            </>
+            
           )}
+          </div>
         </form>
       </section>
       <section className={styles.secContact}>

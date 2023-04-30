@@ -50,10 +50,10 @@ function About() {
       </section>
       <section className={styles.aboutSec}>
         <section className={styles.leftSec}>
-          <div>
+          <div >
             <h1>Hi!</h1>
             <p>
-              My name is kacper and this is my portfolio where you will find the
+              My name is Kacper and this is my portfolio where you will find the
               work I have done, information about the technologies I use and you
               will be able to contact me using the contact form.My adventure
               with programming and website design started a year ago and since
@@ -67,6 +67,7 @@ function About() {
           </div>
         </section>
         <section className={styles.rightSec}>
+          
           <div className={styles.skllsLeftSec}>
             {skills.map((char, index) => {
               if (char === " ") {
@@ -176,7 +177,7 @@ function About() {
                   <p>English</p>
                 </label>
                 <label>
-                  <li>Basic</li>
+                  <li>Basic B</li>
                 </label>
               </section>
             </ul>
