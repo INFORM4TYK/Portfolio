@@ -93,6 +93,14 @@
     span {
       font-size: 4rem;
     }
+    p.bottomSec {
+      bottom: -1.2rem;
+      transform: translateY(20px);
+    }
+    p.topSec {
+      top: -2.3rem;
+      transform: translateX(-20px);
+    }
   }
   .secondText {
     span {
