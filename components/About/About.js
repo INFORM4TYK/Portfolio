@@ -51,20 +51,18 @@ function About() {
       <section className={styles.aboutSec}>
         <section className={styles.leftSec}>
           <div>
+            <h1>Hi!</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic,
-              nihil voluptatem. Iure alias distinctio, amet dolorem
-              reprehenderit, commodi atque ipsam esse fugiat corporis neque
-              omnis facilis quos? Voluptatibus temporibus repellendus corporis
-              facere, dolorem, corrupti neque veritatis amet illum, laborum
-              quasi voluptate! Ipsa quaerat sequi accusantium eligendi et,
-              aspernatur dolorum doloremque, voluptas nobis ut id itaque.
-              Deserunt obcaecati assumenda architecto eos vel, commodi error
-              dicta ipsam. Maxime fugit eveniet in quas quod possimus rem
-              voluptate commodi magni voluptatibus. Nemo, harum, laborum in
-              eaque magni totam laboriosam reprehenderit animi dignissimos
-              commodi voluptatum quasi unde? Dignissimos, reiciendis nulla esse
-              obcaecati numquam illum ea?
+              My name is kacper and this is my portfolio where you will find the
+              work I have done, information about the technologies I use and you
+              will be able to contact me using the contact form.My adventure
+              with programming and website design started a year ago and since
+              then I've been improving my skills in this industry all the time
+              if you made the best browsing website you could to dream. If you
+              are only interested or have more questions, you can contact me via
+              the contact form or other contact forms provided. I am also open
+              to cooperation and other job offers to which I respond as soon as
+              possible.
             </p>
           </div>
         </section>
@@ -85,26 +83,26 @@ function About() {
           <div className={styles.skills}>
             <ul>
               <section>
-              <label>
-                <li>Komunikacja</li>
-              </label>
-              <label>
-                <li>Kreatywność</li>
-              </label>
-              <label>
-                <li>Organizacja</li>
-              </label>
+                <label>
+                  <li>Communication</li>
+                </label>
+                <label>
+                  <li>Leadership</li>
+                </label>
+                <label>
+                  <li>Problem-solving</li>
+                </label>
               </section>
               <section>
-              <label>
-                <li>Liderowanie</li>
-              </label>
-              <label>
-                <li>Adaptyjność</li>
-              </label>
-              <label>
-                <li>Empatia</li>
-              </label>
+                <label>
+                  <li>Teamwork</li>
+                </label>
+                <label>
+                  <li>Creativity</li>
+                </label>
+                <label>
+                  <li>Multitasking</li>
+                </label>
               </section>
             </ul>
           </div>
@@ -124,26 +122,29 @@ function About() {
           <div className={styles.skills}>
             <ul>
               <section>
-              <label>
-                <li>Komunikacja</li>
-              </label>
-              <label>
-                <li>Kreatywność</li>
-              </label>
-              <label>
-                <li>Organizacja</li>
-              </label>
+                <label>
+                  <li>HTML</li>
+                </label>
+                <label>
+                  <li>CSS</li>
+                </label>
+                <label>
+                  <li>SASS</li>
+                </label>
+                <label>
+                  <li>JAVASCRIPT</li>
+                </label>
               </section>
               <section>
-              <label>
-                <li>Liderowanie</li>
-              </label>
-              <label>
-                <li>Adaptyjność</li>
-              </label>
-              <label>
-                <li>Empatia</li>
-              </label>
+                <label>
+                  <li>REACT</li>
+                </label>
+                <label>
+                  <li>NEXT JS</li>
+                </label>
+                <label>
+                  <li>CONTENTFUL</li>
+                </label>
               </section>
             </ul>
           </div>
@@ -163,26 +164,20 @@ function About() {
           <div className={styles.skills}>
             <ul>
               <section>
-              <label>
-                <li>Komunikacja</li>
-              </label>
-              <label>
-                <li>Kreatywność</li>
-              </label>
-              <label>
-                <li>Organizacja</li>
-              </label>
+                <label>
+                  <p>Polish</p>
+                </label>
+                <label>
+                  <li>Native</li>
+                </label>
               </section>
               <section>
-              <label>
-                <li>Liderowanie</li>
-              </label>
-              <label>
-                <li>Adaptyjność</li>
-              </label>
-              <label>
-                <li>Empatia</li>
-              </label>
+                <label>
+                  <p>English</p>
+                </label>
+                <label>
+                  <li>Basic</li>
+                </label>
               </section>
             </ul>
           </div>
