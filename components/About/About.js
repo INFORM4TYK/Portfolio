@@ -10,6 +10,7 @@ function About() {
   const about = "----ABOUT ME----".split("");
   const skills = "PERSONAL SKILLS".split("");
   const tech = "TECHNOLOGYS".split("");
+  const lang = "LANGUAGES".split("");
   return (
     <main className={styles.container}>
       <section className={styles.navSec}>
@@ -83,6 +84,7 @@ function About() {
           </div>
           <div className={styles.skills}>
             <ul>
+              <section>
               <label>
                 <li>Komunikacja</li>
               </label>
@@ -92,6 +94,8 @@ function About() {
               <label>
                 <li>Organizacja</li>
               </label>
+              </section>
+              <section>
               <label>
                 <li>Liderowanie</li>
               </label>
@@ -101,6 +105,7 @@ function About() {
               <label>
                 <li>Empatia</li>
               </label>
+              </section>
             </ul>
           </div>
           <div className={styles.skllsLeftSec}>
@@ -118,6 +123,7 @@ function About() {
           </div>
           <div className={styles.skills}>
             <ul>
+              <section>
               <label>
                 <li>Komunikacja</li>
               </label>
@@ -127,6 +133,8 @@ function About() {
               <label>
                 <li>Organizacja</li>
               </label>
+              </section>
+              <section>
               <label>
                 <li>Liderowanie</li>
               </label>
@@ -136,11 +144,50 @@ function About() {
               <label>
                 <li>Empatia</li>
               </label>
+              </section>
+            </ul>
+          </div>
+          <div className={styles.skllsLeftSec}>
+            {lang.map((char, index) => {
+              if (char === " ") {
+                return <span key={index}>&nbsp;</span>;
+              } else {
+                return (
+                  <span key={index} className={styles.nowrap}>
+                    {char}
+                  </span>
+                );
+              }
+            })}
+          </div>
+          <div className={styles.skills}>
+            <ul>
+              <section>
+              <label>
+                <li>Komunikacja</li>
+              </label>
+              <label>
+                <li>Kreatywność</li>
+              </label>
+              <label>
+                <li>Organizacja</li>
+              </label>
+              </section>
+              <section>
+              <label>
+                <li>Liderowanie</li>
+              </label>
+              <label>
+                <li>Adaptyjność</li>
+              </label>
+              <label>
+                <li>Empatia</li>
+              </label>
+              </section>
             </ul>
           </div>
         </section>
-        </section>
-       
+      </section>
     </main>
   );
 }

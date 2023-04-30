@@ -1,6 +1,6 @@
 import { FormElement } from "../utils/FormInput";
 import styles from "./Contact.module.scss";
-import { useState, useRef } from "react";
+import { useState } from "react";
 import axios from "axios";
 const Contact = () => {
   const inputs = [
@@ -19,7 +19,7 @@ const Contact = () => {
       type: "tel",
       errormessage: "Please enter a valid phone number",
       label: "Your Phone Number",
-      pattern: "^[0-9]{9}$",
+      pattern: "^[0-9]+$",
       required: true,
       maxLength: 9,
     },
@@ -55,7 +55,6 @@ const Contact = () => {
   const onClick = () => {
     setError(true);
   };
-  console.log("btn", error);
   const [serverState, setServerState] = useState({
     submitting: false,
     status: null,
@@ -71,54 +70,57 @@ const Contact = () => {
     if (hasEmptyInput) {
       setError(true);
       return;
-    }
-    else if (ok) {
+    } else if (ok) {
       setError(false);
       form.reset();
     }
   };
   const handleOnSubmit = (e) => {
-  e.preventDefault();
-  const form = e.target;
-  const formData = new FormData(form);
-  let isFormValid = true;
-
-  formData.forEach((value, key) => {
-    if (!value) {
-      isFormValid = false;
-    }
-  });
-
-  if (isFormValid) {
-    setServerState({ submitting: true });
-
-    axios({
-      method: "post",
-      url: process.env.NEXT_PUBLIC_FORMSPREE_ENDPOINT,
-      data: formData,
-    })
-      .then((r) => {
-        handleServerResponse(true, "Thanks!", form);
-        setError(false)
-        form.reset();
-      })
-      .catch((r) => {
-        console.log(r);
-        handleServerResponse(false, r.response.data.error, form);
-        setError(true);
-      });
-  } else {
-    handleServerResponse(false, "Please complete all fields", form);
-  }
-};
-  console.log(error);
-  const disable = (e) => {
-    setTimeout(()=>{
-      if(error === true){
-        disable(e)
+    e.preventDefault();
+    const form = e.target;
+    const formData = new FormData(form);
+    const data = {};
+    let hasError = false;
+    for (let [name, value] of formData.entries()) {
+      const input = inputs.find((input) => input.name === name);
+      data[name] = value;
+      if (input.pattern && !new RegExp(input.pattern).test(value)) {
+        hasError = true;
+      } else if (input.required && !value) {
+        hasError = true;
+      } else {
+        input.errormessage = "";
       }
-    },1000)
-  }
+    }
+    if (!hasError) {
+      setServerState({ submitting: true });
+
+      axios({
+        method: "post",
+        url: process.env.NEXT_PUBLIC_FORMSPREE_ENDPOINT,
+        data: formData,
+      })
+        .then((r) => {
+          handleServerResponse(true, "Thanks!", form);
+          setError(false);
+          hasError = false;
+          form.reset();
+        })
+        .catch((r) => {
+          handleServerResponse(false, r.response.data.error, form);
+          setError(true);
+        });
+    } else {
+      handleServerResponse(false, "Please complete required fields", form);
+    }
+  };
+  const disable = (e) => {
+    setTimeout(() => {
+      if (error === true) {
+        disable(e);
+      }
+    }, 2000);
+  };
   return (
     <div className={styles.container}>
       <section className={styles.secForm}>
@@ -131,6 +133,7 @@ const Contact = () => {
           {inputs.map((input) => {
             return (
               <FormElement
+                onInvalid={(e) => e.preventDefault()}
                 key={input.id}
                 {...input}
                 className={styles.input}
@@ -139,22 +142,22 @@ const Contact = () => {
               />
             );
           })}
-          <button
-            type="submit"
-            disabled={disable}
-            onClick={onClick}
-          >
+          <button type="submit" disabled={disable()} onClick={onClick}>
             Send
           </button>
           {serverState.status && (
-            <p className={!serverState.status.ok ? "errorMsg" : ""}>
-              {serverState.status.msg}
-            </p>
+            <>
+              <p className={!serverState.status.ok ? "errorMsg" : ""}>
+                {serverState.status.msg}
+              </p>
+            </>
           )}
         </form>
       </section>
       <section className={styles.secContact}>
-       <div>elo</div>
+        <div>
+
+        </div>
       </section>
     </div>
   );

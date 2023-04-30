@@ -1,7 +1,6 @@
 import styles from "./Header.module.scss";
 import TextSpan from "../utils/TextSpan";
 
-
 function Header() {
   const firstName = "KACPER".split("");
   const smallHead = "Front-end Developer".split("");
@@ -16,7 +15,7 @@ function Header() {
         </section>
         <section className={styles.secondText}>
           {smallHead.map((letter, index) => {
-             if (letter === " ") {
+            if (letter === " ") {
               return <TextSpan key={index}>&nbsp;</TextSpan>;
             } else {
               return (
@@ -41,7 +40,6 @@ function Header() {
       </main>
     </nav>
   );
-};
+}
 
 export default Header;
-

@@ -1,6 +1,5 @@
 .container {
   width: 100%;
-  // background-color: white;
   display: grid;
   grid-template-columns: 1fr 1fr;
   place-items: center;
@@ -21,8 +20,16 @@
   padding: 2rem;
 }
 .secForm {
-  background-color: aqua;
-  margin: 1rem;
+  margin: 2rem .8rem;
+  color: var(--text-light);
+  background-color: #141414;
+  border-radius: 20px;
+    button{
+      grid-column: 1 / span 2;
+      width: 100%;
+      max-width: calc(100% - 3rem);
+      place-items: center;
+    }
 }
 .secContact {
   background-color: antiquewhite;
@@ -52,7 +59,7 @@
   }
   span {
     visibility: hidden;
-    color: red;
+    color: var(--font-red);
   }
   input:invalid[focused="true"] ~ span,
   textarea:invalid[focused="true"] ~ span {
@@ -60,11 +67,11 @@
   }
   input:invalid[focused="true"],
   textarea:invalid[focused="true"] {
-    border: 1px solid red;
+    border: 1px solid var(--font-red);
   }
   div:nth-child(5) {
     grid-column: 1 / span 2;
-    textarea {
+    textarea{
       height: 10rem;
       resize: none;
       font-family: var(--ff-main);
@@ -76,11 +83,11 @@
 @media (max-width: 430px) {
   .form {
     display: block;
-    
   }
-  .secForm{
+  .secForm {
     max-width: calc(100% - 5rem);
-    textarea,input{
+    textarea,
+    input {
       max-width: auto;
     }
   }

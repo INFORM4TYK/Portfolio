@@ -3,9 +3,12 @@
 :root {
   --color-white: #ffffff;
   --color-black: #222222;
-  --main-color: #2a303c;
+  --main-color: #121316;
   --sec-color: #1fb2a5;
+  --text-dark : #003340;
+  --text-light: #17A68C;
   --dark-green: #107361;
+  --font-red: #FF0035;
   --fs-xsmall: 0.7rem;
   --fs-small: 0.9rem;
   --fs-medium: 1.2rem;
@@ -29,7 +32,7 @@ html {
     rgba(42, 48, 60, 1) 0%,
     rgba(40, 44, 49, 1) 20%,
     rgba(31, 34, 41, 1) 40%,
-    rgba(28, 30, 35, 1) 60%,
+    #1c1e23 60%,
     rgba(27, 28, 35, 1) 80%,
     rgba(15, 16, 18, 1) 100%
   );
@@ -38,7 +41,6 @@ html {
 *,
 *::after,
 *::before {
-  margin: 0;
   padding: 0;
 }
 a,

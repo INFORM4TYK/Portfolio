@@ -1,4 +1,3 @@
-
 import Contact from "../components/ContactForm/Contact";
 import About from "../components/About/About";
 
