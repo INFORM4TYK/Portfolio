@@ -44,6 +44,9 @@
   }
   ul {
     font-size: var(--fs-big);
+    border: dotted 5px var(--sec-color);
+    width: 100%;
+    width: calc(100% - 3rem);
   }
   li {
     margin: 0.4rem 0;
@@ -110,6 +113,8 @@
     }
     .skills {
       width: 100%;
+      display: grid;
+      place-items: center;
     }
     grid-template-columns: auto;
     .skllsLeftSec {
