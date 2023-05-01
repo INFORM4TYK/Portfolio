@@ -23,16 +23,18 @@
   }
 }
 .leftSec {
-  margin: 1rem 1rem 3rem 1rem;
+  margin: 1rem 1rem 2rem 1rem;
   padding: 1rem;
   color: var(--text-light);
   font-size: var(--fs-big);
+  border-bottom: dotted 5px var(--sec-color);
 }
 .rightSec {
   display: grid;
   grid-template-columns: auto auto;
   gap: 4rem;
   margin-bottom: 2rem;
+  place-items: center;
   article {
     color: var(--text-dark);
   }
