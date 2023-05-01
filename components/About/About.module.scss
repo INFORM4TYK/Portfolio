@@ -23,11 +23,11 @@
   }
 }
 .leftSec {
-  margin: 1rem 1rem 2rem 1rem;
-  padding: 1rem;
+  margin: 1rem 1rem .4rem 1rem;
+  padding: 0 1rem;
   color: var(--text-light);
   font-size: var(--fs-big);
-  border-bottom: dotted 5px var(--sec-color);
+  border: dotted 5px var(--sec-color);
 }
 .rightSec {
   display: grid;
@@ -48,7 +48,11 @@
   li {
     margin: 0.4rem 0;
   }
-
+  img{
+    height: 50px;
+    width: 50px;
+    margin-right: 1rem;
+  }
   li:before {
     content: "--";
     color: #758b87;
@@ -56,18 +60,24 @@
   }
 }
 .skllsLeftSec {
-  // border-radius: 0px;
-  // box-shadow: 5px 5px 5px #147068, -5px -5px 1px #2af4e2;
   background-color: var(--text-light);
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   padding: 1rem 0;
   font-size: var(--fs-xlarge);
+  border: dotted 5px #1c1e23;
+  border-right: none ;
   clip-path: polygon(0 0, 92% 0, 100% 50%, 92% 100%, 0 100%);
+  background-clip:border-box;
   color: #1c1e23;
+  & > *{
+    display: flex;
+    align-items: center;
+  }
 }
+
 .skills {
   width: 100%;
   ul {
@@ -83,19 +93,30 @@
     }
   }
   .rightSec {
+    
+    gap: 0rem;
+    img{
+      width: 50px;
+      height: 50px;
+      margin: 0;
+    }
     ul {
       place-items: center;
+      padding-left: 1rem;
       section {
         text-align: left;
+        width: 100%;
       }
     }
     .skills {
-      text-align: center;
       width: 100%;
     }
     grid-template-columns: auto;
     .skllsLeftSec {
       clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 100%, 0 100%);
+      justify-content: space-between;
+      box-sizing: border-box;
+      padding: 0 2rem 0 4rem;
     }
   }
 }
@@ -110,9 +131,12 @@
   }
   .leftSec {
     font-size: var(--fs-medium);
+    border: dotted 3px var(--sec-color);
+    
   }
+  
 }
-@media (max-width: 455px) {
+@media (max-width: 550px) {
   .navSec,
   .rightSec {
     div > ul {
@@ -127,11 +151,21 @@
     a {
       margin: 1rem 0.3rem;
     }
+    .skllsLeftSec {
+      padding: 0 1rem;
+    }
   }
   .skills {
     font-size: var(--fs-small);
   }
   .leftSec {
     font-size: var(--fs-small);
+    border: dotted 2px var(--sec-color);
+  }
+  .rightSec{
+    img{
+      width: 35px;
+      height: 35px;
+    }
   }
 }
