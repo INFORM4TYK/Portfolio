@@ -174,7 +174,7 @@ const Contact = () => {
           <section>
           <Link href="https://github.com/INFORM4TYK" legacyBehavior>
           <a target="_blank">
-          <p>github.com/INFORM4TYK</p>
+          <p>INFORM4TYK</p>
             <Image src={LGit} alt="github" />
           </a>
         </Link>
@@ -182,7 +182,7 @@ const Contact = () => {
           <section>
           <Link href="https://wa.me/48793094929" legacyBehavior>
           <a target="_blank">
-            <p>wa.me/48793094929</p>
+            <p>+48 793094929</p>
          
             <Image src={LWhatsApp} alt="WhatsApp" />
           </a>
@@ -192,7 +192,7 @@ const Contact = () => {
           <Link href="https://m.me/Kwoznicki10" legacyBehavior>
           <a target="_blank">
             <p>
-         m.me/Kwoznicki10
+         Kwoznicki10
             </p>
             <span>
             <Image src={LMessenger} alt="messenger" />
@@ -203,7 +203,7 @@ const Contact = () => {
           <section>
           <Link href="https://www.instagram.com/k_woznicki/" legacyBehavior>
           <a target="_blank">
-            <p>instagram.com/k_woznicki</p>
+            <p>k_woznicki</p>
          
             <Image src={LInstagram} alt="instagram" />
           </a>
