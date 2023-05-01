@@ -6,6 +6,8 @@ import WhatsApp from "../../public/whats.svg";
 import Instagram from "../../public/insta.svg";
 import Messenger from "../../public/messenger.svg";
 import Git from "../../public/git.svg";
+import Phone from "../../public/phone.svg"
+import Link from "next/link";
 import Image from "next/image";
 const Contact = () => {
   const inputs = [
@@ -161,21 +163,51 @@ const Contact = () => {
       </section>
       <section className={styles.secContact}>
         <div>
-          <section>
-            www.link.com/qwerty
-            <Image src={Git} />
+        <section>
+          <Link href="tel:793094929" legacyBehavior>
+          <a target="_blank">
+           <p>793094929</p>   
+            <Image src={Phone} alt="phone" />
+          </a>
+        </Link>
           </section>
           <section>
-            www.link.com/qwerty
-            <Image src={WhatsApp} />
+          <Link href="https://github.com/INFORM4TYK" legacyBehavior>
+          <a target="_blank">
+          <p>github.com/INFORM4TYK</p>
+            <Image src={Git} alt="github" />
+          </a>
+        </Link>
           </section>
           <section>
-            www.link.com/qwerty
-            <Image src={Messenger} />
+          <Link href="https://wa.me/48793094929" legacyBehavior>
+          <a target="_blank">
+            <p>wa.me/48793094929</p>
+         
+            <Image src={WhatsApp} alt="WhatsApp" />
+          </a>
+        </Link>
           </section>
           <section>
-            www.link.com/qwerty
-            <Image src={Instagram} />
+          <Link href="https://m.me/Kwoznicki10" legacyBehavior>
+          <a target="_blank">
+            <p>
+         m.me/Kwoznicki10
+            </p>
+            <span>
+            <Image src={Messenger} alt="messenger" />
+            </span>
+          </a>
+        </Link>
+          </section>
+          <section>
+          <Link href="https://www.instagram.com/k_woznicki/" legacyBehavior>
+          <a target="_blank">
+            <p>instagram.com/k_woznicki</p>
+         
+            <Image src={Instagram} alt="instagram" />
+          </a>
+        </Link>
           </section>
         </div>
       </section>
