@@ -17,24 +17,27 @@
     flex-direction: column;
   }
   .secContact {
-    padding: 0;
-    div > section {
-      margin: 1rem 0;
-      width: 100%;
+    div{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      flex-wrap: wrap;
     }
-    div {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 2rem;
+    section{
+      width: 100%;
+      max-width: 570px;
+      margin: 0 1rem;
     }
   }
 }
 .secForm,
 .secContact {
   padding: 2rem;
+  
 }
 .secForm {
-  margin: 2rem 0.8rem 0 0.8rem;
+  margin: 0 1rem;
   color: var(--text-light);
   background-color: var(--color-dark);
   border-radius: 20px;
@@ -98,11 +101,8 @@
 }
 .secContact {
   padding: 0;
-  section {
-    width: 100%;
-  }
+  width: calc(100% - 2rem);
   a,p {
-    padding: 1rem 2rem;
     background-color: var(--color-dark);
     color: var(--text-light);
     display: flex;
@@ -111,27 +111,16 @@
     margin: 1rem 0;
     border-radius: 10px;
   }
+  a{
+    padding: 1rem 2rem;
+  }
   img {
     margin: 1rem;
     width: 50px;
     height: 50px;
   }
-  & > *{
+}
 
-  }
-}
-@media (max-width: 850px) {
-  .secContact {
-    div {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 0;
-      a {
-        margin: 0;
-      }
-    }
-}
-}
 .form {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -199,19 +188,15 @@
   }
   .secContact {
     div{
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 0 1rem ;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      flex-wrap: wrap;
     }
     img {
       width: 35px;
       height: 35px;
-    }
-    section{
-     width: 100%;
-      p{
-        display: none;
-      }
     }
   }
 }

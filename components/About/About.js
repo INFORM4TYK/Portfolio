@@ -56,24 +56,24 @@ function About() {
           <div>
             <h1>Hi!</h1>
             <p>
-              My name is Kacper and this is my portfolio where you will find the
-              work I have done, information about the technologies I use and you
-              will be able to contact me using the contact form.My adventure
-              with programming and website design started a year ago and since
-              then I've been improving my skills in this industry all the time
-              if you made the best browsing website you could to dream. If you
-              are only interested or have more questions, you can contact me via
-              the contact form or other contact forms provided. I am also open
-              to cooperation and other job offers to which I respond as soon as
-              possible.
+              Welcome to my portfolio! My name is Kacper and I'm a frontend
+              developer. I started my journey with programming and website
+              design a year ago, and since then I've been constantly improving
+              my skills to create the best browsing experiences possible. On
+              this website, you'll find examples of my work, as well as
+              information about the technologies I use. If you're interested in
+              learning more or have any questions, feel free to contact me using
+              the form provided. I'm also open to collaborations and job offers,
+              and I'll respond as quickly as possible. Let's work together to
+              bring your ideas to life!
             </p>
           </div>
           <div>
-          <Link href="./#contact">
-            <button className={styles.button}>
-              <span>Contact me!</span>
-            </button>
-          </Link>
+            <Link href="./#contact">
+              <button className={styles.button}>
+                <span>Contact me!</span>
+              </button>
+            </Link>
           </div>
         </section>
         <section className={styles.rightSec}>

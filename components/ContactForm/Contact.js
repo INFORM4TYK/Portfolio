@@ -2,11 +2,11 @@ import { FormElement } from "../utils/FormInput";
 import styles from "./Contact.module.scss";
 import { useState } from "react";
 import axios from "axios";
-import WhatsApp from "../../public/whats.svg";
-import Instagram from "../../public/insta.svg";
-import Messenger from "../../public/messenger.svg";
-import Git from "../../public/git.svg";
-import Phone from "../../public/phone.svg"
+import LWhatsApp from "../../public/lightwhats.svg";
+import LInstagram from "../../public/lightinsta.svg";
+import LMessenger from "../../public/lightmess.svg";
+import LGit from "../../public/lightgit.svg";
+import LPhone from "../../public/phone.svg"
 import Link from "next/link";
 import Image from "next/image";
 const Contact = () => {
@@ -167,7 +167,7 @@ const Contact = () => {
           <Link href="tel:793094929" legacyBehavior>
           <a target="_blank">
            <p>793094929</p>   
-            <Image src={Phone} alt="phone" />
+            <Image src={LPhone} alt="phone" />
           </a>
         </Link>
           </section>
@@ -175,7 +175,7 @@ const Contact = () => {
           <Link href="https://github.com/INFORM4TYK" legacyBehavior>
           <a target="_blank">
           <p>github.com/INFORM4TYK</p>
-            <Image src={Git} alt="github" />
+            <Image src={LGit} alt="github" />
           </a>
         </Link>
           </section>
@@ -184,7 +184,7 @@ const Contact = () => {
           <a target="_blank">
             <p>wa.me/48793094929</p>
          
-            <Image src={WhatsApp} alt="WhatsApp" />
+            <Image src={LWhatsApp} alt="WhatsApp" />
           </a>
         </Link>
           </section>
@@ -195,7 +195,7 @@ const Contact = () => {
          m.me/Kwoznicki10
             </p>
             <span>
-            <Image src={Messenger} alt="messenger" />
+            <Image src={LMessenger} alt="messenger" />
             </span>
           </a>
         </Link>
@@ -205,7 +205,7 @@ const Contact = () => {
           <a target="_blank">
             <p>instagram.com/k_woznicki</p>
          
-            <Image src={Instagram} alt="instagram" />
+            <Image src={LInstagram} alt="instagram" />
           </a>
         </Link>
           </section>
