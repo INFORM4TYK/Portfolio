@@ -177,7 +177,7 @@ function About() {
                   <p>English</p>
                 </label>
                 <label>
-                  <li>Basic B</li>
+                  <li>Basic&nbsp;B2</li>
                 </label>
               </section>
             </ul>

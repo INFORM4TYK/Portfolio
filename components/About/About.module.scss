@@ -30,46 +30,47 @@
 }
 .rightSec {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem 2rem;
+  grid-template-columns: auto auto;
+  gap: 4rem;
   margin-bottom: 2rem;
-  margin: 0 0 2rem 0;
-
-  article{
+  article {
     color: var(--text-dark);
   }
-  li,p {
+  li,
+  p {
     color: var(--text-light);
   }
   ul {
     font-size: var(--fs-big);
   }
-  li{
-    margin: .4rem 0;
+  li {
+    margin: 0.4rem 0;
   }
-  
-  .skllsLeftSec {
-    border-radius: 0px;
-    box-shadow: 5px 5px 5px #147068, -5px -5px 1px #2af4e2;
-    background-color: var(--sec-color);
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem 0;
-    font-size: var(--fs-xlarge);
-    clip-path: polygon(0 0, 92% 0, 100% 50%, 92% 100%, 0 100%);
-  }
-    .skills {
-      width: 100%;
-      // ul{
-      //   // repair
-      // }
-    }
+
   li:before {
     content: "--";
     color: #758b87;
     margin-right: 1rem;
+  }
+}
+.skllsLeftSec {
+  // border-radius: 0px;
+  // box-shadow: 5px 5px 5px #147068, -5px -5px 1px #2af4e2;
+  background-color: var(--text-light);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0;
+  font-size: var(--fs-xlarge);
+  clip-path: polygon(0 0, 92% 0, 100% 50%, 92% 100%, 0 100%);
+  color: #1c1e23;
+}
+.skills {
+  width: 100%;
+  ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -80,15 +81,15 @@
     }
   }
   .rightSec {
+    ul {
+      place-items: center;
+      section {
+        text-align: left;
+      }
+    }
     .skills {
       text-align: center;
       width: 100%;
-      ul {
-        place-items: center;
-        section {
-          text-align: left;
-        }
-      }
     }
     grid-template-columns: auto;
     .skllsLeftSec {
@@ -112,9 +113,6 @@
 @media (max-width: 455px) {
   .navSec,
   .rightSec {
-    .skills{
-      font-size: var(--fs-small);
-    }
     div > ul {
       font-size: var(--fs-small);
     }
@@ -122,11 +120,14 @@
       font-size: 1.5rem;
     }
     li:before {
-      margin-right: .3rem;
+      margin-right: 0.3rem;
     }
     a {
       margin: 1rem 0.3rem;
     }
+  }
+  .skills {
+    font-size: var(--fs-small);
   }
   .leftSec {
     font-size: var(--fs-small);

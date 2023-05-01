@@ -38,17 +38,15 @@
     }
     button {
       appearance: button;
-      background-color: #1899D6;
+      background-color: var(--sec-color);
       border: solid transparent;
       border-radius: 16px;
       border-width: 0 0 4px;
-      box-sizing: border-box;
       color: #FFFFFF;
       display: inline-block;
       font-size: 15px;
       font-weight: 700;
       margin: 0;
-      outline: none;
       overflow: visible;
       padding: 13px 19px;
       text-align: center;
@@ -57,14 +55,11 @@
       transform: translateZ(0);
       transition: filter .2s;
       user-select: none;
-      -webkit-user-select: none;
-      vertical-align: middle;
-      white-space: nowrap;
      }
      
      button:after {
       background-clip: padding-box;
-      background-color: #1CB0F6;
+      background-color:  #119b8f;
       border: solid transparent;
       border-radius: 16px;
       border-width: 0 0 4px;
@@ -76,23 +71,15 @@
       top: 0;
       z-index: -1;
      }
-     
-     button:main, button:focus {
-      user-select: auto;
-     }
-     
      button:hover:not(:disabled) {
       filter: brightness(1.1);
      }
-     
      button:disabled {
       cursor: auto;
      }
-     
      button:active:after {
       border-width: 0 0 0px;
      }
-     
      button:active {
       padding-bottom: 10px;
      }
@@ -153,9 +140,14 @@
   }
   .secForm {
     max-width: calc(100% - 5rem);
+    width: 100%;
     textarea,
     input {
-      max-width: auto;
+      width: 100%;
+    }
+    label > input {
+      width: 100%;
+      max-width: 100%;
     }
   }
 }
