@@ -3,9 +3,9 @@ import WhatsApp from "../../public/whats.svg";
 import Instagram from "../../public/insta.svg";
 import Messenger from "../../public/messenger.svg";
 import Git from "../../public/git.svg";
-import TechImg from "../../public/tech.svg"
-import LangImg from "../../public/lang.svg"
-import SkillsImg from "../../public/skills.svg"
+import TechImg from "../../public/tech.svg";
+import LangImg from "../../public/lang.svg";
+import SkillsImg from "../../public/skills.svg";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -15,7 +15,7 @@ function About() {
   const tech = "TECHNOLOGYS".split("");
   const lang = "LANGUAGES".split("");
   return (
-    <main className={styles.container}>
+    <main className={styles.container} style={{ scrollBehavior: "smooth" }}>
       <section className={styles.navSec}>
         <Link href="https://wa.me/48793094929" legacyBehavior>
           <a target="_blank">
@@ -53,7 +53,7 @@ function About() {
       </section>
       <section className={styles.aboutSec}>
         <section className={styles.leftSec}>
-          <div >
+          <div>
             <h1>Hi!</h1>
             <p>
               My name is Kacper and this is my portfolio where you will find the
@@ -68,25 +68,31 @@ function About() {
               possible.
             </p>
           </div>
+          <div>
+          <Link href="./#contact">
+            <button className={styles.button}>
+              <span>Contact me!</span>
+            </button>
+          </Link>
+          </div>
         </section>
         <section className={styles.rightSec}>
-          
           <div className={styles.skllsLeftSec}>
             <div>
-            {skills.map((char, index) => {
-              if (char === " ") {
-                return <span key={index}>&nbsp;</span>;
-              } else {
-                return (
-                  <span key={index} className={styles.nowrap}>
-                    {char}
-                  </span>
-                );
-              }
-            })}
+              {skills.map((char, index) => {
+                if (char === " ") {
+                  return <span key={index}>&nbsp;</span>;
+                } else {
+                  return (
+                    <span key={index} className={styles.nowrap}>
+                      {char}
+                    </span>
+                  );
+                }
+              })}
             </div>
             <div>
-            <Image src={SkillsImg} alt="skills" />
+              <Image src={SkillsImg} alt="skills" />
             </div>
           </div>
           <div className={styles.skills}>
@@ -117,20 +123,20 @@ function About() {
           </div>
           <div className={styles.skllsLeftSec}>
             <div>
-            {tech.map((char, index) => {
-              if (char === " ") {
-                return <span key={index}>&nbsp;</span>;
-              } else {
-                return (
-                  <span key={index} className={styles.nowrap}>
-                    {char}
-                  </span>
-                );
-              }
-            })}
+              {tech.map((char, index) => {
+                if (char === " ") {
+                  return <span key={index}>&nbsp;</span>;
+                } else {
+                  return (
+                    <span key={index} className={styles.nowrap}>
+                      {char}
+                    </span>
+                  );
+                }
+              })}
             </div>
             <div>
-            <Image src={TechImg} alt="tech" />
+              <Image src={TechImg} alt="tech" />
             </div>
           </div>
           <div className={styles.skills}>
@@ -164,20 +170,20 @@ function About() {
           </div>
           <div className={styles.skllsLeftSec}>
             <div>
-            {lang.map((char, index) => {
-              if (char === " ") {
-                return <span key={index}>&nbsp;</span>;
-              } else {
-                return (
-                  <span key={index} className={styles.nowrap}>
-                    {char}
-                  </span>
-                );
-              }
-            })}
+              {lang.map((char, index) => {
+                if (char === " ") {
+                  return <span key={index}>&nbsp;</span>;
+                } else {
+                  return (
+                    <span key={index} className={styles.nowrap}>
+                      {char}
+                    </span>
+                  );
+                }
+              })}
             </div>
             <div>
-             <Image src={LangImg} alt="lang" />
+              <Image src={LangImg} alt="lang" />
             </div>
           </div>
           <div className={styles.skills}>

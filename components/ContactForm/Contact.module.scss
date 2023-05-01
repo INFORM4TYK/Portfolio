@@ -14,15 +14,21 @@
     grid-template-columns: 1fr;
     place-items: center;
   }
+  .secContact {
+    padding: 0;
+    div > section {
+      margin: 1rem 0;
+    }
+  }
 }
 .secForm,
 .secContact {
   padding: 2rem;
 }
 .secForm {
-  margin: 2rem 0.8rem;
+  margin: 2rem 0.8rem 0 0.8rem;
   color: var(--text-light);
-  background-color: #1d1f24;
+  background-color: #17181b;
   border-radius: 20px;
   div:nth-child(6) {
     grid-column: 1 / span 2;
@@ -38,11 +44,11 @@
     }
     button {
       appearance: button;
-      background-color:#119b8f;
+      background-color: #119b8f;
       border: solid transparent;
       border-radius: 16px;
       border-width: 0 0 4px;
-      color: #FFFFFF;
+      color: #ffffff;
       display: inline-block;
       font-size: 15px;
       font-weight: 700;
@@ -53,13 +59,13 @@
       text-transform: uppercase;
       touch-action: manipulation;
       transform: translateZ(0);
-      transition: filter .2s;
+      transition: filter 0.2s;
       user-select: none;
-     }
-     
-     button:after {
+    }
+
+    button:after {
       background-clip: padding-box;
-      background-color:  var(--text-light);
+      background-color: var(--text-light);
       border: solid transparent;
       border-radius: 16px;
       border-width: 0 0 4px;
@@ -70,23 +76,39 @@
       right: 0;
       top: 0;
       z-index: -1;
-     }
-     button:hover:not(:disabled) {
+    }
+    button:hover:not(:disabled) {
       filter: brightness(1.1);
-     }
-     button:disabled {
+    }
+    button:disabled {
       cursor: auto;
-     }
-     button:active:after {
+    }
+    button:active:after {
       border-width: 0 0 0px;
-     }
-     button:active {
+    }
+    button:active {
       padding-bottom: 10px;
-     }
+    }
   }
 }
 .secContact {
-  background-color: antiquewhite;
+  padding: 0;
+  width: 100%;
+  max-width: calc(100% - 5rem);
+  section {
+    padding: 2.2rem 0;
+    background-color: #17181b;
+    color: var(--text-light);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 3rem 0;
+    border-radius: 10px;
+  }
+  img {
+    width: 50px;
+    height: 50px;
+  }
 }
 .form {
   display: grid;
@@ -149,6 +171,12 @@
     label > input {
       width: 100%;
       max-width: 100%;
+    }
+  }
+  .secContact{
+    img{
+      width: 35px;
+      height: 35px;
     }
   }
 }

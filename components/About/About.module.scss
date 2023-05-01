@@ -1,11 +1,11 @@
+
 .navSec {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
   font-size: var(--fs-xlarge);
-
-  background-color: var(--sec-color);
+  background-color: var(--text-light);
   padding: 1rem 0;
   a {
     width: var(--fs-xlarge);
@@ -23,11 +23,47 @@
   }
 }
 .leftSec {
-  margin: 1rem 1rem .4rem 1rem;
-  padding: 0 1rem;
+  position: relative;
+  padding: 1rem;
   color: var(--text-light);
   font-size: var(--fs-big);
-
+  background-color: #1c1e23;
+  box-shadow: #1c1e23 10px 10px 10px 10px;
+  div:nth-child(2){
+    width: fit-content;
+  }
+}
+.button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1c1e23;
+  border: 2px solid var(--text-light);
+  border-radius: 5px;
+  padding: 15px;
+  width: 154px;
+  height: 49px;
+  color: #fff;
+  font-size: 20px;
+  transition: all .3s ease-in-out;
+  z-index: 1;
+  overflow: hidden;
+}
+.button::before {
+  content: "";
+  background-color: var(--text-light);
+  width: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: width 700ms ease-in-out;
+  display: inline-block;
+}
+.button:hover::before {
+  width: 100%;
 }
 .rightSec {
   display: grid;
@@ -51,7 +87,7 @@
   li {
     margin: 0.4rem 0;
   }
-  img{
+  img {
     height: 50px;
     width: 50px;
     margin-right: 1rem;
@@ -71,11 +107,11 @@
   padding: 1rem 0;
   font-size: var(--fs-xlarge);
 
-  border-right: none ;
+  border-right: none;
   clip-path: polygon(0 0, 92% 0, 100% 50%, 92% 100%, 0 100%);
-  background-clip:border-box;
+  background-clip: border-box;
   color: #1c1e23;
-  & > *{
+  & > * {
     display: flex;
     align-items: center;
   }
@@ -86,7 +122,7 @@
   ul {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 0 .5rem;
+    padding: 0 0.5rem;
   }
 }
 
@@ -97,9 +133,8 @@
     }
   }
   .rightSec {
-    
     gap: 0rem;
-    img{
+    img {
       width: 50px;
       height: 50px;
       margin: 0;
@@ -138,9 +173,7 @@
   .leftSec {
     font-size: var(--fs-medium);
     border: dotted 3px var(--sec-color);
-    
   }
-  
 }
 @media (max-width: 550px) {
   .navSec,
@@ -168,8 +201,8 @@
     font-size: var(--fs-small);
     border: dotted 2px var(--sec-color);
   }
-  .rightSec{
-    img{
+  .rightSec {
+    img {
       width: 35px;
       height: 35px;
     }

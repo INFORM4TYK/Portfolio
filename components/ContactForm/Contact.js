@@ -2,6 +2,11 @@ import { FormElement } from "../utils/FormInput";
 import styles from "./Contact.module.scss";
 import { useState } from "react";
 import axios from "axios";
+import WhatsApp from "../../public/whats.svg";
+import Instagram from "../../public/insta.svg";
+import Messenger from "../../public/messenger.svg";
+import Git from "../../public/git.svg";
+import Image from "next/image";
 const Contact = () => {
   const inputs = [
     {
@@ -122,7 +127,7 @@ const Contact = () => {
     }, 2000);
   };
   return (
-    <div className={styles.container}>
+    <div id="contact" className={styles.container}>
       <section className={styles.secForm}>
         <form
           noValidate
@@ -155,7 +160,24 @@ const Contact = () => {
         </form>
       </section>
       <section className={styles.secContact}>
-        <div></div>
+        <div>
+          <section>
+            www.link.com/qwerty
+            <Image src={Git} />
+          </section>
+          <section>
+            www.link.com/qwerty
+            <Image src={WhatsApp} />
+          </section>
+          <section>
+            www.link.com/qwerty
+            <Image src={Messenger} />
+          </section>
+          <section>
+            www.link.com/qwerty
+            <Image src={Instagram} />
+          </section>
+        </div>
       </section>
     </div>
   );
