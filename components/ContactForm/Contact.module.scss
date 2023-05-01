@@ -38,7 +38,7 @@
     }
     button {
       appearance: button;
-      background-color: var(--sec-color);
+      background-color:#119b8f;
       border: solid transparent;
       border-radius: 16px;
       border-width: 0 0 4px;
@@ -59,7 +59,7 @@
      
      button:after {
       background-clip: padding-box;
-      background-color:  #119b8f;
+      background-color:  var(--text-light);
       border: solid transparent;
       border-radius: 16px;
       border-width: 0 0 4px;
@@ -104,12 +104,13 @@
   }
   input,
   textarea {
+    background-color: #363638;
     padding: 0.4rem;
     width: 100%;
     max-width: 250px;
     border: none;
-    border-radius: 2px;
-    box-shadow: 3px 3px 31px -13px rgba(66, 68, 90, 1);
+    border-radius: 10px;
+    // box-shadow: 3px 3px 31px -13px rgba(66, 68, 90, 1);
   }
   span {
     visibility: hidden;
