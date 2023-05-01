@@ -69,11 +69,9 @@ function About() {
             </p>
           </div>
           <div>
-            <Link href="./#contact">
-              <button className={styles.button}>
-                <span>Contact me!</span>
-              </button>
-            </Link>
+            <a href="#contact">
+              <button className={styles.button}>Contact me!</button>
+            </a>
           </div>
         </section>
         <section className={styles.rightSec}>
