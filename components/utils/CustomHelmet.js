@@ -1,5 +1,5 @@
 import { Helmet } from 'react-helmet';
-import Img from '../../public/Ogimage.jpg'
+import Img from '../../public/img.jpg'
 const CustomHelmet = () => {
 
     const title = 'Kacper Woźnicki'
