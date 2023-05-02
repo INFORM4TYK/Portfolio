@@ -1,39 +1,10 @@
-// @-webkit-keyframes tracking-in-expand {
-//   0% {
-//     letter-spacing: -0.5em;
-//     opacity: 0;
-//   }
-//   40% {
-//     opacity: 0.6;
-//   }
-//   100% {
-//     opacity: 1;
-//   }
-// }
-// @keyframes tracking-in-expand {
-//   0% {
-//     letter-spacing: -0.5em;
-//     opacity: 0;
-//   }
-//   40% {
-//     opacity: 0.6;
-//   }
-//   100% {
-//     opacity: 1;
-//   }
-// }
-
 .container {
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: max(100vh, 650px);
 }
-@media (max-width: 620px) {
-  .container {
-    width: calc(100% - 0.3rem);
-  }
-}
+
 .container::before {
   content: " ";
   display: block;
@@ -59,7 +30,6 @@
   user-select: none;
   width: 20px;
 }
-
 .mainText {
   animation: tracking-in-expand 2s cubic-bezier(0.215, 0.61, 0.355, 1) both;
   font-size: var(--fs-xxlarge);
@@ -80,6 +50,37 @@
   p.topSec {
     top: -1rem;
     transform: translateX(-20px);
+  }
+}
+.secondText {
+  animation: tracking-in-expand 1.5s cubic-bezier(0.215, 0.61, 0.355, 1) 0.4s
+    both;
+  font-size: var(--fs-large);
+  color: #1d7373;
+  background: linear-gradient(to right, #0a3a40 4px, transparent 4px) 0 0,
+    linear-gradient(to left, #0a3a40 4px, transparent 4px) 100% 100%,
+    linear-gradient(to bottom, #0a3a40 4px, transparent 4px) 0 0,
+    linear-gradient(to top, #0a3a40 4px, transparent 4px) 100% 100%;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  display: flex;
+  align-items: center;
+  padding: 0.7rem;
+  span {
+    display: inline-block;
+  }
+  @media (max-width: 620px) {
+    padding: 0.5rem;
+    background-size: 15px 15px;
+  }
+  @media (max-width: 300px) {
+    padding: 0.5rem;
+    background-size: 15px 15px;
+  }
+}
+@media (max-width: 620px) {
+  .container {
+    width: calc(100% - 0.3rem);
   }
 }
 @media (max-width: 720px) {
@@ -119,31 +120,5 @@
     span {
       font-size: 1rem;
     }
-  }
-}
-.secondText {
-  animation: tracking-in-expand 1.5s cubic-bezier(0.215, 0.61, 0.355, 1) 0.4s
-    both;
-  font-size: var(--fs-large);
-  color: #1d7373;
-  background: linear-gradient(to right, #0a3a40 4px, transparent 4px) 0 0,
-    linear-gradient(to left, #0a3a40 4px, transparent 4px) 100% 100%,
-    linear-gradient(to bottom, #0a3a40 4px, transparent 4px) 0 0,
-    linear-gradient(to top, #0a3a40 4px, transparent 4px) 100% 100%;
-  background-repeat: no-repeat;
-  background-size: 20px 20px;
-  display: flex;
-  align-items: center;
-  padding: 0.7rem;
-  span {
-    display: inline-block;
-  }
-  @media (max-width: 620px) {
-    padding: 0.5rem;
-    background-size: 15px 15px;
-  }
-  @media (max-width: 300px) {
-    padding: 0.5rem;
-    background-size: 15px 15px;
   }
 }

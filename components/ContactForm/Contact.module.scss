@@ -20,14 +20,14 @@
     background-position: -10px 30px;
   }
   .secContact {
-    div{
+    div {
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: row;
       flex-wrap: wrap;
     }
-    section{
+    section {
       width: 100%;
       max-width: 570px;
       margin: 0 1rem;
@@ -37,7 +37,6 @@
 .secForm,
 .secContact {
   padding: 2rem;
-  
 }
 .secForm {
   margin: 0 1rem;
@@ -105,7 +104,8 @@
 .secContact {
   padding: 0;
   width: calc(100% - 2rem);
-  a,p {
+  a,
+  p {
     background-color: var(--color-dark);
     color: var(--text-light);
     display: flex;
@@ -114,7 +114,7 @@
     margin: 1rem 0;
     border-radius: 10px;
   }
-  a{
+  a {
     padding: 1rem 2rem;
   }
   img {
@@ -190,7 +190,7 @@
     }
   }
   .secContact {
-    div{
+    div {
       display: flex;
       justify-content: center;
       align-items: center;

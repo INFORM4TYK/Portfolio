@@ -1,9 +1,7 @@
 export const FormElement = (props) => {
   const { label, errormessage, id, as, error, ...inputProps } = props;
-  
-  const handleFocused = () => {
 
-  };
+  const handleFocused = () => {};
 
   return (
     <div>

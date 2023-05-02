@@ -9,7 +9,7 @@ import SkillsImg from "../../public/skills.svg";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect } from "react";
-import 'aos/dist/aos.css'
+import "aos/dist/aos.css";
 import Aos from "aos";
 
 function About() {
@@ -22,7 +22,7 @@ function About() {
   const lang = "LANGUAGES".split("");
 
   return (
-    <main className={styles.container} >
+    <main className={styles.container}>
       <section className={styles.navSec}>
         <Link href="https://wa.me/48793094929" legacyBehavior>
           <a data-aos="fade-down" target="_blank">
@@ -49,7 +49,7 @@ function About() {
         </section>
         <Link href="" legacyBehavior>
           <a data-aos="fade-down" target="_blank">
-            <Image src={Messenger} alt="Messenger"  />
+            <Image src={Messenger} alt="Messenger" />
           </a>
         </Link>
         <Link href="https://github.com/INFORM4TYK" legacyBehavior>
@@ -58,12 +58,11 @@ function About() {
           </a>
         </Link>
       </section>
-      <section  className={styles.aboutSec}>
+      <section className={styles.aboutSec}>
         <section className={styles.leftSec}>
           <div>
-            
-            <h1 data-aos='fade-up' >Hi!</h1>
-            <p data-aos='fade-down'>
+            <h1 data-aos="fade-up">Hi!</h1>
+            <p data-aos="fade-down">
               Welcome to my portfolio! My name is Kacper and I'm a frontend
               developer. I started my journey with programming and website
               design a year ago, and since then I've been constantly improving
@@ -75,16 +74,15 @@ function About() {
               and I'll respond as quickly as possible. Let's work together to
               bring your ideas to life!
             </p>
-            
           </div>
           <div>
             <a href="#contact">
-              <button  className={styles.button}>Contact me!</button>
+              <button className={styles.button}>Contact me!</button>
             </a>
           </div>
         </section>
         <section data-aos="fade-up" className={styles.rightSec}>
-          <div  data-aos="fade-up"  className={styles.skllsLeftSec}>
+          <div data-aos="fade-up" className={styles.skllsLeftSec}>
             <div>
               {skills.map((char, index) => {
                 if (char === " ") {
@@ -128,7 +126,7 @@ function About() {
               </section>
             </ul>
           </div>
-          <div  data-aos="fade-up" className={styles.skllsLeftSec}>
+          <div data-aos="fade-up" className={styles.skllsLeftSec}>
             <div>
               {tech.map((char, index) => {
                 if (char === " ") {

@@ -1,15 +1,15 @@
 import { FormElement } from "../utils/FormInput";
 import styles from "./Contact.module.scss";
-import { useState,useEffect } from "react";
+import { useState, useEffect } from "react";
 import axios from "axios";
 import LWhatsApp from "../../public/lightwhats.svg";
 import LInstagram from "../../public/lightinsta.svg";
 import LMessenger from "../../public/lightmess.svg";
 import LGit from "../../public/lightgit.svg";
-import LPhone from "../../public/phone.svg"
+import LPhone from "../../public/phone.svg";
 import Link from "next/link";
 import Image from "next/image";
-import 'aos/dist/aos.css'
+import "aos/dist/aos.css";
 import Aos from "aos";
 const Contact = () => {
   useEffect(() => {
@@ -136,7 +136,8 @@ const Contact = () => {
   return (
     <div id="contact" className={styles.container}>
       <section className={styles.secForm}>
-        <form data-aos='fade-down'
+        <form
+          data-aos="fade-down"
           noValidate
           onSubmit={handleOnSubmit}
           className={styles.form}
@@ -168,51 +169,49 @@ const Contact = () => {
       </section>
       <section className={styles.secContact}>
         <div>
-        <section data-aos='fade-up'>
-          <Link href="tel:793094929" legacyBehavior>
-          <a target="_blank">
-           <p>793094929</p>   
-            <Image src={LPhone} alt="phone" />
-          </a>
-        </Link>
+          <section data-aos="fade-up">
+            <Link href="tel:793094929" legacyBehavior>
+              <a target="_blank">
+                <p>793094929</p>
+                <Image src={LPhone} alt="phone" />
+              </a>
+            </Link>
           </section>
-          <section data-aos='fade-up'>
-          <Link href="https://github.com/INFORM4TYK" legacyBehavior>
-          <a target="_blank">
-          <p>INFORM4TYK</p>
-            <Image src={LGit} alt="github" />
-          </a>
-        </Link>
+          <section data-aos="fade-up">
+            <Link href="https://github.com/INFORM4TYK" legacyBehavior>
+              <a target="_blank">
+                <p>INFORM4TYK</p>
+                <Image src={LGit} alt="github" />
+              </a>
+            </Link>
           </section>
-          <section data-aos='fade-up'>
-          <Link href="https://wa.me/48793094929" legacyBehavior>
-          <a target="_blank">
-            <p>+48 793094929</p>
-         
-            <Image src={LWhatsApp} alt="WhatsApp" />
-          </a>
-        </Link>
+          <section data-aos="fade-up">
+            <Link href="https://wa.me/48793094929" legacyBehavior>
+              <a target="_blank">
+                <p>+48 793094929</p>
+
+                <Image src={LWhatsApp} alt="WhatsApp" />
+              </a>
+            </Link>
           </section>
-          <section data-aos='fade-up'>
-          <Link href="https://m.me/Kwoznicki10" legacyBehavior>
-          <a target="_blank">
-            <p>
-         Kwoznicki10
-            </p>
-            <span>
-            <Image src={LMessenger} alt="messenger" />
-            </span>
-          </a>
-        </Link>
+          <section data-aos="fade-up">
+            <Link href="https://m.me/Kwoznicki10" legacyBehavior>
+              <a target="_blank">
+                <p>Kwoznicki10</p>
+                <span>
+                  <Image src={LMessenger} alt="messenger" />
+                </span>
+              </a>
+            </Link>
           </section>
-          <section data-aos='fade-up'>
-          <Link href="https://www.instagram.com/k_woznicki/" legacyBehavior>
-          <a target="_blank">
-            <p>k_woznicki</p>
-         
-            <Image src={LInstagram} alt="instagram" />
-          </a>
-        </Link>
+          <section data-aos="fade-up">
+            <Link href="https://www.instagram.com/k_woznicki/" legacyBehavior>
+              <a target="_blank">
+                <p>k_woznicki</p>
+
+                <Image src={LInstagram} alt="instagram" />
+              </a>
+            </Link>
           </section>
         </div>
       </section>
