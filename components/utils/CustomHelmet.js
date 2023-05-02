@@ -1,28 +1,22 @@
 import { Helmet } from 'react-helmet';
-import Img from '../../public/img.jpg'
 const CustomHelmet = () => {
-    const title = 'Kacper Woźnicki'
-    const description = 'Front-end Developer Portfolio';
-    const keywords = 'portfolio,frontend,developer,it';
-    const siteURL = 'https://kwoznicki.vercel.app';
-
     return(
         <Helmet>
-            <title>{title}</title>
-            <meta name='description' content={description} />
-            <meta name='keywords' content={keywords} />
+            <title>Kacper Woźnicki</title>
+            <meta name='description' content='Front-end Developer Portfolio' />
+            <meta name='keywords' content='portfolio,frontend,developer,it' />
             <meta charset='UTF-8' />
             <meta http-equiv='X-UA-Compatible' content='IE=edge' />
             <meta name='viewport' content='width=device-width, initial-scale=1.0' />
             <meta name='theme-color' content='#000000' />
             <meta name='color-scheme' content='dark' />
-            <meta property='og:title' content={title} />
+            <meta property='og:title' content='Kacper Woźnicki' />
             <meta property='og:type' content='website' />
-            <meta property='og:description' content={description} />
-            <meta property='og:image' content={Img} />
+            <meta property='og:description' content='Front-end Developer Portfolio' />
+            <meta property='og:image' content='../../public/img.jpg' />
             <meta property='og:locale' content='en - EN' />
-            <meta property='og:url' content={siteURL} />
-            <link rel='canonical' href={siteURL} />
+            <meta property='og:url' content='https://kwoznicki.vercel.app' />
+            <link rel='canonical' href='https://kwoznicki.vercel.app' />
             <link rel="icon" type="image.png"  href="/favicon.png" />
             <link rel="preconnect" href="https://fonts.googleapis.com" />
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
