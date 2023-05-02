@@ -1,7 +1,6 @@
 import { Helmet } from 'react-helmet';
 import Img from '../../public/img.jpg'
 const CustomHelmet = () => {
-
     const title = 'Kacper Woźnicki'
     const description = 'Front-end Developer Portfolio';
     const keywords = 'portfolio,frontend,developer,it';
@@ -24,7 +23,7 @@ const CustomHelmet = () => {
             <meta property='og:locale' content='en - EN' />
             <meta property='og:url' content={siteURL} />
             <link rel='canonical' href={siteURL} />
-            <link rel='icon' type='image/ico' href='../../public/favicon.ico' />
+            <link rel="icon" type="image.png"  href="/favicon.png" />
             <link rel="preconnect" href="https://fonts.googleapis.com" />
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
             <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@100;400;700;900&display=swap" rel="stylesheet" /> 
