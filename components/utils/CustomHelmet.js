@@ -13,7 +13,7 @@ const CustomHelmet = () => {
             <meta property='og:title' content='Kacper Woźnicki' />
             <meta property='og:type' content='website' />
             <meta property='og:description' content='Front-end Developer Portfolio' />
-            <meta property='og:image' content='../../public/img.jpg' />
+            <meta property='og:image' content='/img.jpg' />
             <meta property='og:locale' content='en - EN' />
             <meta property='og:url' content='https://kwoznicki.vercel.app' />
             <link rel='canonical' href='https://kwoznicki.vercel.app' />
