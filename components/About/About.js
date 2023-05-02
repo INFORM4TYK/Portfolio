@@ -6,25 +6,31 @@ import Git from "../../public/git.svg";
 import TechImg from "../../public/tech.svg";
 import LangImg from "../../public/lang.svg";
 import SkillsImg from "../../public/skills.svg";
-import Chain from "../../public/chain.svg";
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect } from "react";
+import 'aos/dist/aos.css'
+import Aos from "aos";
 
 function About() {
+  useEffect(() => {
+    Aos.init();
+  }, []);
   const about = "----ABOUT ME----".split("");
   const skills = "PERSONAL SKILLS".split("");
   const tech = "TECHNOLOGYS".split("");
   const lang = "LANGUAGES".split("");
+
   return (
-    <main className={styles.container} style={{ scrollBehavior: "smooth" }}>
+    <main className={styles.container} >
       <section className={styles.navSec}>
         <Link href="https://wa.me/48793094929" legacyBehavior>
-          <a target="_blank">
+          <a data-aos="fade-down" target="_blank">
             <Image src={WhatsApp} alt="WhatsApp" />
           </a>
         </Link>
         <Link href="https://www.instagram.com/k_woznicki/" legacyBehavior>
-          <a target="_blank">
+          <a data-aos="fade-down" target="_blank">
             <Image src={Instagram} alt="Insagram" />
           </a>
         </Link>
@@ -42,21 +48,22 @@ function About() {
           })}
         </section>
         <Link href="" legacyBehavior>
-          <a>
-            <Image src={Messenger} alt="Messenger" target="_blank" />
+          <a data-aos="fade-down" target="_blank">
+            <Image src={Messenger} alt="Messenger"  />
           </a>
         </Link>
         <Link href="https://github.com/INFORM4TYK" legacyBehavior>
-          <a target="_blank">
+          <a data-aos="fade-down" target="_blank">
             <Image src={Git} alt="Insagram" />
           </a>
         </Link>
       </section>
-      <section className={styles.aboutSec}>
+      <section  className={styles.aboutSec}>
         <section className={styles.leftSec}>
           <div>
-            <h1>Hi!</h1>
-            <p>
+            
+            <h1 data-aos='fade-up' >Hi!</h1>
+            <p data-aos='fade-down'>
               Welcome to my portfolio! My name is Kacper and I'm a frontend
               developer. I started my journey with programming and website
               design a year ago, and since then I've been constantly improving
@@ -68,15 +75,16 @@ function About() {
               and I'll respond as quickly as possible. Let's work together to
               bring your ideas to life!
             </p>
+            
           </div>
           <div>
             <a href="#contact">
-              <button className={styles.button}>Contact me!</button>
+              <button  className={styles.button}>Contact me!</button>
             </a>
           </div>
         </section>
-        <section className={styles.rightSec}>
-          <div className={styles.skllsLeftSec}>
+        <section data-aos="fade-up" className={styles.rightSec}>
+          <div  data-aos="fade-up"  className={styles.skllsLeftSec}>
             <div>
               {skills.map((char, index) => {
                 if (char === " ") {
@@ -94,7 +102,7 @@ function About() {
               <Image src={SkillsImg} alt="skills" />
             </div>
           </div>
-          <div className={styles.skills}>
+          <div data-aos="fade-down" className={styles.skills}>
             <ul>
               <section>
                 <label>
@@ -120,7 +128,7 @@ function About() {
               </section>
             </ul>
           </div>
-          <div className={styles.skllsLeftSec}>
+          <div  data-aos="fade-up" className={styles.skllsLeftSec}>
             <div>
               {tech.map((char, index) => {
                 if (char === " ") {
@@ -138,7 +146,7 @@ function About() {
               <Image src={TechImg} alt="tech" />
             </div>
           </div>
-          <div className={styles.skills}>
+          <div data-aos="fade-down" className={styles.skills}>
             <ul>
               <section>
                 <label>
@@ -167,7 +175,7 @@ function About() {
               </section>
             </ul>
           </div>
-          <div className={styles.skllsLeftSec}>
+          <div data-aos="fade-up" className={styles.skllsLeftSec}>
             <div>
               {lang.map((char, index) => {
                 if (char === " ") {
@@ -185,7 +193,7 @@ function About() {
               <Image src={LangImg} alt="lang" />
             </div>
           </div>
-          <div className={styles.skills}>
+          <div data-aos="fade-down" className={styles.skills}>
             <ul>
               <section>
                 <label>

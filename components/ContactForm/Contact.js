@@ -1,6 +1,6 @@
 import { FormElement } from "../utils/FormInput";
 import styles from "./Contact.module.scss";
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import axios from "axios";
 import LWhatsApp from "../../public/lightwhats.svg";
 import LInstagram from "../../public/lightinsta.svg";
@@ -9,7 +9,12 @@ import LGit from "../../public/lightgit.svg";
 import LPhone from "../../public/phone.svg"
 import Link from "next/link";
 import Image from "next/image";
+import 'aos/dist/aos.css'
+import Aos from "aos";
 const Contact = () => {
+  useEffect(() => {
+    Aos.init();
+  }, []);
   const inputs = [
     {
       id: 1,
@@ -131,7 +136,7 @@ const Contact = () => {
   return (
     <div id="contact" className={styles.container}>
       <section className={styles.secForm}>
-        <form
+        <form data-aos='fade-down'
           noValidate
           onSubmit={handleOnSubmit}
           className={styles.form}
@@ -163,7 +168,7 @@ const Contact = () => {
       </section>
       <section className={styles.secContact}>
         <div>
-        <section>
+        <section data-aos='fade-up'>
           <Link href="tel:793094929" legacyBehavior>
           <a target="_blank">
            <p>793094929</p>   
@@ -171,7 +176,7 @@ const Contact = () => {
           </a>
         </Link>
           </section>
-          <section>
+          <section data-aos='fade-up'>
           <Link href="https://github.com/INFORM4TYK" legacyBehavior>
           <a target="_blank">
           <p>INFORM4TYK</p>
@@ -179,7 +184,7 @@ const Contact = () => {
           </a>
         </Link>
           </section>
-          <section>
+          <section data-aos='fade-up'>
           <Link href="https://wa.me/48793094929" legacyBehavior>
           <a target="_blank">
             <p>+48 793094929</p>
@@ -188,7 +193,7 @@ const Contact = () => {
           </a>
         </Link>
           </section>
-          <section>
+          <section data-aos='fade-up'>
           <Link href="https://m.me/Kwoznicki10" legacyBehavior>
           <a target="_blank">
             <p>
@@ -200,7 +205,7 @@ const Contact = () => {
           </a>
         </Link>
           </section>
-          <section>
+          <section data-aos='fade-up'>
           <Link href="https://www.instagram.com/k_woznicki/" legacyBehavior>
           <a target="_blank">
             <p>k_woznicki</p>
