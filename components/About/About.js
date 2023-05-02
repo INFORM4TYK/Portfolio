@@ -6,6 +6,7 @@ import Git from "../../public/git.svg";
 import TechImg from "../../public/tech.svg";
 import LangImg from "../../public/lang.svg";
 import SkillsImg from "../../public/skills.svg";
+import Chain from "../../public/chain.svg";
 import Image from "next/image";
 import Link from "next/link";
 
