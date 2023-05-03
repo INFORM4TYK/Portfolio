@@ -19,6 +19,14 @@
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
+  @supports (-webkit-overflow-scrolling: touch) {
+    background-attachment: fixed;
+  }
+}
+@supports not (-webkit-overflow-scrolling: touch) {
+  .container::before {
+    background-attachment: scroll;
+  }
 }
 .main {
   display: flex;
