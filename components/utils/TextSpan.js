@@ -12,7 +12,7 @@ function TextSpan({ children }) {
       ],
     };
   };
-  return <motion.span class='notranslate' whileHover={() => rubberBand()}>{children}</motion.span>;
+  return <motion.span className='notranslate' whileHover={() => rubberBand()}>{children}</motion.span>;
 }
 
 export default TextSpan;
