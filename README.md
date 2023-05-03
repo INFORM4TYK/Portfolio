@@ -1,6 +1,6 @@
 # Kacper Woźnicki Portfolio 
 
-[Live website](https://kwoznicki.vervel.app)
+[Live website](https://kwoznicki.vercel.app)
 
 On the site we can find: 
 * Basic informations about me
