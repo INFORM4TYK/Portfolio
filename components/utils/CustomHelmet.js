@@ -10,12 +10,7 @@ const CustomHelmet = () => {
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="theme-color" content="#000000" />
       <meta name="color-scheme" content="dark" />
-      <meta property="og:title" content="Kacper Woźnicki" />
-      <meta property="og:type" content="website" />
-      <meta property="og:description" content="Front-end Developer Portfolio" />
-      <meta property="og:image" content="/img.jpg" />
-      <meta property="og:locale" content="en - EN" />
-      <meta property="og:url" content="https://kwoznicki.vercel.app" />
+      
       <link rel="canonical" href="https://kwoznicki.vercel.app" />
       <link rel="icon" type="image.png" href="/favicon.png" />
       <link rel="preconnect" href="https://fonts.googleapis.com" />
