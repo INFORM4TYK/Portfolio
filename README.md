@@ -10,7 +10,7 @@ On the site we can find:
 ## Technologies
 Project is created with:
 * NextJs
-* Module styling
+* SCSS modules
 * Formspree
 
 ## Features
