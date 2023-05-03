@@ -9,16 +9,28 @@ function Header() {
       <main className={styles.main}>
         <section className={styles.mainText}>
           {firstName.map((letter, index) => {
-            return <TextSpan data-notranslate key={index}>{letter}</TextSpan>;
+            return (
+              <TextSpan class="notranslate" key={index}>
+                {letter}
+              </TextSpan>
+            );
           })}
         </section>
         <section className={styles.secondText}>
           {smallHead.map((letter, index) => {
             if (letter === " ") {
-              return <TextSpan data-notranslate key={index}>&nbsp;</TextSpan>;
+              return (
+                <TextSpan class="notranslate" key={index}>
+                  &nbsp;
+                </TextSpan>
+              );
             } else {
               return (
-                <TextSpan data-notranslate key={index} className={styles.nowrap}>
+                <TextSpan
+                  class="notranslate"
+                  key={index}
+                  className={styles.nowrap}
+                >
                   {letter}
                 </TextSpan>
               );
@@ -30,7 +42,11 @@ function Header() {
             <p className={styles.topSec}>&lt;h1&gt;</p>
           </section>
           {lastName.map((letter, index) => {
-            return <TextSpan data-notranslate key={index}>{letter}</TextSpan>;
+            return (
+              <TextSpan class="notranslate" key={index}>
+                {letter}
+              </TextSpan>
+            );
           })}
           <section>
             <p className={styles.bottomSec}>&lt;/h1&gt;</p>

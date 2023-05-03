@@ -38,13 +38,13 @@ function About() {
           {about.map((char, index) => {
             if (char === " ") {
               return (
-                <span data-notranslate key={index}>
+                <span class="notranslate" key={index}>
                   &nbsp;
                 </span>
               );
             } else {
               return (
-                <span data-notranslate key={index} className={styles.nowrap}>
+                <span class="notranslate" key={index} className={styles.nowrap}>
                   {char}
                 </span>
               );
@@ -91,14 +91,14 @@ function About() {
               {skills.map((char, index) => {
                 if (char === " ") {
                   return (
-                    <span data-notranslate key={index}>
+                    <span class="notranslate" key={index}>
                       &nbsp;
                     </span>
                   );
                 } else {
                   return (
                     <span
-                      data-notranslate
+                      class="notranslate"
                       key={index}
                       className={styles.nowrap}
                     >
@@ -143,14 +143,14 @@ function About() {
               {tech.map((char, index) => {
                 if (char === " ") {
                   return (
-                    <span data-notranslate key={index}>
+                    <span class="notranslate" key={index}>
                       &nbsp;
                     </span>
                   );
                 } else {
                   return (
                     <span
-                      data-notranslate
+                      class="notranslate"
                       key={index}
                       className={styles.nowrap}
                     >
@@ -198,14 +198,14 @@ function About() {
               {lang.map((char, index) => {
                 if (char === " ") {
                   return (
-                    <span data-notranslate key={index}>
+                    <span class="notranslate" key={index}>
                       &nbsp;
                     </span>
                   );
                 } else {
                   return (
                     <span
-                      data-notranslate
+                      class="notranslate"
                       key={index}
                       className={styles.nowrap}
                     >
