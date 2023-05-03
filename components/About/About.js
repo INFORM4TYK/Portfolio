@@ -38,13 +38,13 @@ function About() {
           {about.map((char, index) => {
             if (char === " ") {
               return (
-                <span class="notranslate" key={index}>
+                <span className="notranslate" key={index}>
                   &nbsp;
                 </span>
               );
             } else {
               return (
-                <span class="notranslate" key={index} className={styles.nowrap}>
+                <span className="notranslate" key={index}>
                   {char}
                 </span>
               );
@@ -91,16 +91,15 @@ function About() {
               {skills.map((char, index) => {
                 if (char === " ") {
                   return (
-                    <span class="notranslate" key={index}>
+                    <span className="notranslate" key={index}>
                       &nbsp;
                     </span>
                   );
                 } else {
                   return (
                     <span
-                      class="notranslate"
+                      className="notranslate"
                       key={index}
-                      className={styles.nowrap}
                     >
                       {char}
                     </span>
@@ -150,9 +149,9 @@ function About() {
                 } else {
                   return (
                     <span
-                      class="notranslate"
+                      className="notranslate"
                       key={index}
-                      className={styles.nowrap}
+                      
                     >
                       {char}
                     </span>
@@ -198,16 +197,16 @@ function About() {
               {lang.map((char, index) => {
                 if (char === " ") {
                   return (
-                    <span class="notranslate" key={index}>
+                    <span className="notranslate" key={index}>
                       &nbsp;
                     </span>
                   );
                 } else {
                   return (
                     <span
-                      class="notranslate"
+                      className="notranslate"
                       key={index}
-                      className={styles.nowrap}
+                    
                     >
                       {char}
                     </span>
