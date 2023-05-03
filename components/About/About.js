@@ -37,10 +37,14 @@ function About() {
         <section className={styles.mainText}>
           {about.map((char, index) => {
             if (char === " ") {
-              return <span key={index}>&nbsp;</span>;
+              return (
+                <span data-notranslate key={index}>
+                  &nbsp;
+                </span>
+              );
             } else {
               return (
-                <span key={index} className={styles.nowrap}>
+                <span data-notranslate key={index} className={styles.nowrap}>
                   {char}
                 </span>
               );
@@ -86,10 +90,18 @@ function About() {
             <div>
               {skills.map((char, index) => {
                 if (char === " ") {
-                  return <span key={index}>&nbsp;</span>;
+                  return (
+                    <span data-notranslate key={index}>
+                      &nbsp;
+                    </span>
+                  );
                 } else {
                   return (
-                    <span key={index} className={styles.nowrap}>
+                    <span
+                      data-notranslate
+                      key={index}
+                      className={styles.nowrap}
+                    >
                       {char}
                     </span>
                   );
@@ -130,10 +142,18 @@ function About() {
             <div>
               {tech.map((char, index) => {
                 if (char === " ") {
-                  return <span key={index}>&nbsp;</span>;
+                  return (
+                    <span data-notranslate key={index}>
+                      &nbsp;
+                    </span>
+                  );
                 } else {
                   return (
-                    <span key={index} className={styles.nowrap}>
+                    <span
+                      data-notranslate
+                      key={index}
+                      className={styles.nowrap}
+                    >
                       {char}
                     </span>
                   );
@@ -177,10 +197,18 @@ function About() {
             <div>
               {lang.map((char, index) => {
                 if (char === " ") {
-                  return <span key={index}>&nbsp;</span>;
+                  return (
+                    <span data-notranslate key={index}>
+                      &nbsp;
+                    </span>
+                  );
                 } else {
                   return (
-                    <span key={index} className={styles.nowrap}>
+                    <span
+                      data-notranslate
+                      key={index}
+                      className={styles.nowrap}
+                    >
                       {char}
                     </span>
                   );
