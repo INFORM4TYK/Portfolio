@@ -25,16 +25,16 @@ function About() {
     <main className={styles.container}>
       <section className={styles.navSec}>
         <Link href="https://wa.me/48793094929" legacyBehavior>
-          <a data-aos="fade-down" target="_blank">
+          <a data-aos="fade-right" target="_blank">
             <Image src={WhatsApp} alt="WhatsApp" />
           </a>
         </Link>
         <Link href="https://www.instagram.com/k_woznicki/" legacyBehavior>
-          <a data-aos="fade-down" target="_blank">
+          <a data-aos="fade-right" target="_blank">
             <Image src={Instagram} alt="Insagram" />
           </a>
         </Link>
-        <section className={styles.mainText}>
+        <section data-aos="fade-up" className={styles.mainText}>
           {about.map((char, index) => {
             if (char === " ") {
               return (
@@ -51,13 +51,13 @@ function About() {
             }
           })}
         </section>
-        <Link href="" legacyBehavior>
-          <a data-aos="fade-down" target="_blank">
+        <Link href="https://m.me/Kwoznicki10" legacyBehavior>
+          <a data-aos="fade-left" target="_blank">
             <Image src={Messenger} alt="Messenger" />
           </a>
         </Link>
         <Link href="https://github.com/INFORM4TYK" legacyBehavior>
-          <a data-aos="fade-down" target="_blank">
+          <a data-aos="fade-left" target="_blank">
             <Image src={Git} alt="Insagram" />
           </a>
         </Link>
@@ -85,8 +85,8 @@ function About() {
             </a>
           </div>
         </section>
-        <section data-aos="fade-up" className={styles.rightSec}>
-          <div data-aos="fade-up" className={styles.skllsLeftSec}>
+        <section className={styles.rightSec}>
+          <div data-aos="fade-right" className={styles.skllsLeftSec}>
             <div>
               {skills.map((char, index) => {
                 if (char === " ") {
@@ -111,7 +111,7 @@ function About() {
               <Image src={SkillsImg} alt="skills" />
             </div>
           </div>
-          <div data-aos="fade-down" className={styles.skills}>
+          <div data-aos="fade-left" className={styles.skills}>
             <ul>
               <section>
                 <label>
@@ -137,7 +137,7 @@ function About() {
               </section>
             </ul>
           </div>
-          <div data-aos="fade-up" className={styles.skllsLeftSec}>
+          <div data-aos="fade-right" className={styles.skllsLeftSec}>
             <div>
               {tech.map((char, index) => {
                 if (char === " ") {
@@ -163,7 +163,7 @@ function About() {
               <Image src={TechImg} alt="tech" />
             </div>
           </div>
-          <div data-aos="fade-down" className={styles.skills}>
+          <div data-aos="fade-left" className={styles.skills}>
             <ul>
               <section>
                 <label>
@@ -192,7 +192,7 @@ function About() {
               </section>
             </ul>
           </div>
-          <div data-aos="fade-up" className={styles.skllsLeftSec}>
+          <div data-aos="fade-right" className={styles.skllsLeftSec}>
             <div>
               {lang.map((char, index) => {
                 if (char === " ") {
@@ -218,7 +218,7 @@ function About() {
               <Image src={LangImg} alt="lang" />
             </div>
           </div>
-          <div data-aos="fade-down" className={styles.skills}>
+          <div data-aos="fade-left" className={styles.skills}>
             <ul>
               <section>
                 <label>
