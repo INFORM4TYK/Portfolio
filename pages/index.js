@@ -1,7 +1,6 @@
 import Contact from "../components/ContactForm/Contact";
 import About from "../components/About/About";
 import Head from "next/head";
-// import CustomHelmet from "../components/utils/CustomHelmet";
 export default function Home() {
   return (
     <>
@@ -34,7 +33,6 @@ export default function Home() {
         rel="stylesheet"
       />
     </Head>
-    {/* <CustomHelmet /> */}
       <About />
       <Contact />
     </>
