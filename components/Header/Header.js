@@ -12,14 +12,14 @@ function Header() {
   const smallHead = "Front-end Developer".split("");
   const lastName = "WOŹNICKI".split("");
   return (
-    <nav className={styles.container}>
+    <nav data-aos="zoom-out" className={styles.container}>
       <main className={styles.main}>
-        <section data-aos='fade-left' className={styles.mainText}>
+        <section className={styles.mainText}>
           {firstName.map((letter, index) => {
             return <TextSpan key={index}>{letter}</TextSpan>;
           })}
         </section>
-        <section data-aos='fade-right' className={styles.secondText}>
+        <section className={styles.secondText}>
           {smallHead.map((letter, index) => {
             if (letter === " ") {
               return <TextSpan key={index}>&nbsp;</TextSpan>;
