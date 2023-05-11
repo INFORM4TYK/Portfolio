@@ -67,11 +67,6 @@
   width: 100%;
 }
 .rightSec {
-  background-image: url(../../public/chain.svg), url(../../public/chain.svg),
-    url(../../public/chain.svg), url(../../public/chain.svg);
-  background-position: 5% 128px, 30% 128px, 5% 386px, 30% 386px;
-  background-repeat: no-repeat;
-  background-size: 100px 185px;
   display: grid;
   grid-template-columns: auto auto;
   gap: 4rem;

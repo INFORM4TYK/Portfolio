@@ -189,6 +189,9 @@ function About() {
                 <label>
                   <li>CONTENTFUL</li>
                 </label>
+                <label>
+                  <li>FIGMA</li>
+                </label>
               </section>
             </ul>
           </div>
@@ -233,7 +236,7 @@ function About() {
                   <p>English</p>
                 </label>
                 <label>
-                  <li>Basic&nbsp;B2</li>
+                  <li>B2</li>
                 </label>
               </section>
             </ul>
