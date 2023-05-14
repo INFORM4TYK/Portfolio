@@ -136,6 +136,7 @@ const Contact = () => {
   return (
     <div id="contact" className={styles.container}>
       <section className={styles.secForm}>
+        <h1>Contact Me</h1>
         <form
           data-aos="fade-down"
           noValidate

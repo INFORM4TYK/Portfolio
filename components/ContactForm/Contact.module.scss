@@ -9,31 +9,6 @@
     margin-bottom: 0.3rem;
   }
 }
-@media (max-width: 1024px) {
-  .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-image: url(../../public/chainhor.svg);
-    background-repeat: no-repeat;
-    background-position: -10px 30px;
-  }
-  .secContact {
-    div {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: row;
-      flex-wrap: wrap;
-    }
-    section {
-      width: 100%;
-      max-width: 570px;
-      margin: 0 1rem;
-    }
-  }
-}
 .secForm,
 .secContact {
   padding: 2rem;
@@ -41,8 +16,11 @@
 .secForm {
   margin: 0 1rem;
   color: var(--text-light);
-  background-color: var(--color-dark);
   border-radius: 20px;
+  h1{
+    text-align: center;
+    font-size: var(--fs-large);
+  }
   div:nth-child(6) {
     grid-column: 1 / span 2;
     width: 100%;
@@ -72,7 +50,7 @@
       transition: filter 0.2s;
       user-select: none;
     }
-
+    
     button:after {
       background-clip: padding-box;
       background-color: var(--text-light);
@@ -169,6 +147,30 @@
       resize: none;
       font-family: var(--ff-main);
       max-width: 100%;
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-position: -10px 30px;
+  }
+  .secContact {
+    div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    section {
+      width: 100%;
+      max-width: 570px;
+      margin: 0 1rem;
     }
   }
 }
